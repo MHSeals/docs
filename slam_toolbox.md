@@ -1,10 +1,7 @@
 ---
-date: 2024-09-30
 descripton: Information about slam_toolbox
 documentation: https://docs.ros.org/en/humble/p/slam_toolbox/
 bryan's documentation: https://docs.google.com/document/d/1msz3Z5DdcRVLMJXQrmZ61iGfAP3T2CpFbgfcOO_6OnA/edit
-tags:
-  - roboboat
 ---
 slam_toolbox is a package we use to implement the SLAM algorithm in roboboat :)
 

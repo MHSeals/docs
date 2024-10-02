@@ -1,8 +1,6 @@
 ---
-date: 2024-10-01
 descripton: Information about Gazebo
 documentation: https://gazebosim.org/docs/garden/tutorials/
-tags: roboboat
 ---
 gazebo is a simulation program we use to test our boat!
 instead of taking out our boat every time we need to test code, we simply run gazebo!

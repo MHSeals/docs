@@ -1,9 +1,6 @@
 ---
-date: 2024-09-30
 descripton: Information about kiss_icp
 documentation: https://pypi.org/project/kiss-icp/
-tags:
-  - roboboat
 ---
 ## what is kiss_icp?
 kiss_icp is an odometry pipeline 'that just works'. :3

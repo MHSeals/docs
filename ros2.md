@@ -1,8 +1,6 @@
 ---
-date: 2024-10-01
 descripton: documentation about ros2
 documentation: https://docs.ros.org/en/humble/index.html
-tags: roboboat
 ---
 ros, short for Robot Operating System, is not an operating system.
 ros is a set of software libraries and tools built to help people like us make software for robots! ros2 is an improvement on ros1.
@@ -22,8 +20,8 @@ for more information on nodes, [check here](https://docs.ros.org/en/humble/Tutor
 
 ## where do i go from here?
 now that you understand how ros2 works, you can learn how to use some software that we use along with ros2.
-* [[gazebo]] - a robot simulation program
-* [[vrx]] - 
-* [[slam_toolbox]] - tools to combat the slam problem
-* [[kiss_icp]] - an odometry pipeline
+* [gazebo](./gazebo.md) - a robot simulation program
+* [vrx](./vrx.md) - 
+* [slam_toolbox](./slam_toolbox.md) - tools to combat the slam problem
+* [kiss_icp](./kiss_icp.md) - an odometry pipeline
 if you're not ready to get started with programming, you can also help expand this documentation by making pull requests!
