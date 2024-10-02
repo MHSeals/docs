@@ -17,3 +17,5 @@ you must have:
 2. install [[slam_toolbox]] and [[kiss_icp]]
 
 ## workspace setup
+1. run [[gazebo]] using the command `ros2 launch vrx_gazebo rviz.launch.py`
+2. run 
