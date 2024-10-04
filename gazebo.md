@@ -8,5 +8,5 @@ instead of taking out our boat every time we need to test code, we simply run ga
 
 ## how to use gazebo
 launch gazebo using the command below:
-`ros2 launch vrx_gazebo rviz.launch.py`
+`ros2 launch vrx_gz competition.launch.py world:=sydney_regatta`
 once you open up gazebo, you'll probably be greeting with a frozen screen. don't worry, this is normal. give it a minute of two :]
