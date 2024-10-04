@@ -16,5 +16,5 @@ if you're new here and don't know where to start, check out the [ros2](./ros2.md
 ### Header 3
 ###### Header 6
 [my link goes here](google.com)
-![my_image](https://tse3.mm.bing.net/th?id=OIP.CBFZpMOFqyCjyHOJxouwVAHaE8&pid=Api)
+![my_image](https://tse3.mm.bing.net/th?id=OIP.CBFZpMOFqyCjyHOJxouwVAHaE8&pid=Api)\
 Look at that cute kitty!
