@@ -12,8 +12,9 @@ slam stands for Simultaneous Localization and Mapping… but what does that mean
 * **slam** = localizing and mapping at the same time!
 
 ## how to use slam_toolbox
-* slam_toolbox gets data from `/tf` and `/scan`
+* slam_toolbox subscribers to data from `/tf` and `/scan`
 * `/odom` and `/laser` topics need to be linked in the `/tf` tree
+
 ### installation
 1. update your system
 `sudo apt update && sudo apt upgrade`
@@ -40,5 +41,5 @@ this code below will copy one of the template files to your current working dire
 ### slam_toolbox rviz plugin
 1. open rviz
 `ros2 launch vrx_gazebo rviz.launch.py`
-2. panels -> add new panel
-3. choose slam toolbox plugin
+2. Menu bar (top left corner) -> Panels -> Add New Panel
+3. You should now see the SlamToolboxPlugin panel in the list of panels!
