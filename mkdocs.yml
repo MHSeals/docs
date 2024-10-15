@@ -1,0 +1,23 @@
+site_name: MHSeals2025 Docs
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: lol.md
+  - CS:
+    - Setup:
+      - Installing Ubuntu: CS/setup/installing_ubuntu.md
+      - more: CS/setup/setting_up_your_workspace.md
+    - Hardware:
+      - Intel RealSense Camera: CS/hardware/intel_realsense_camera.md
+      - VLP-16 LIDAR: CS/hardware/vlp16_lidar.md
+    - Navigation:
+      - Simulation:
+        - CS/nav/sim/gazebo.md
+        - CS/nav/sim/tf2.md
+        - CS/nav/sim/URDF.md
+        - CS/nav/sim/vrx.md
+      - CS/nav/kiss_icp.md
+      - CS/nav/nav2stack.md
+      - CS/nav/slam_toolbox.md
