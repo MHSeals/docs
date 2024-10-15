@@ -24,10 +24,5 @@ arrows show hierarchy of the tree: the arrow points toward the parent
 - install via `sudo apt install ros-humble-tf2-tools`
 ### viewing data
 `ros2 run tf2_tools view_frames`
-creates 2 files: PDF and URDF file
+creates 2 files: PDF and [URDF](URDF.md) file
 PDF gives visual description of the tf2 'tree'
-
-# URDF
-URDF = Unified Robot Description Format
-- XML format
-- used to generate TFs
