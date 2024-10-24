@@ -9,7 +9,7 @@ URDF = Unified Robot Description Format
 ## making a urdf file
 urdf files end with .urdf and are in XML format
 ```xml
-< ?xml version="1.0?">
+<?xml version="1.0"?>
 <robot name="myrobot"> 
 	<!-- your links and joints go here! -->
 </robot>
