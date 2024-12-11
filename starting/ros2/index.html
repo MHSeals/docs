@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ROS2 - CS2025 Documentation - MHSeals</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ROS2";
+        var mkdocs_page_input_path = "starting/ros2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS2025 Documentation - MHSeals
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../the_plan/">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Setup</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../setup/installing_ubuntu/">Installing Ubuntu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../setup/setting_up_your_workspace/">Workspace setup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">ROS2</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-ros2-graph">the ros2 graph</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nodes">nodes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#topics-publishers-and-subscribers">topics, publishers and subscribers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#services-servers-and-clients">services, servers, and clients</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#actions">actions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#packages">packages</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mavros/">MAVROS</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hardware</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hardware/intel_realsense_camera/">Intel RealSense Camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hardware/vlp16_lidar/">VLP-16 LIDAR</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Navigation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >SLAM (Deprecated)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../nav/kiss_icp/">kiss_icp</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../nav/slam_toolbox/">Slam toolbox</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../nav/sim/tf2/">tf2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../nav/sim/URDF/">URDF</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Simulation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../nav/sim/gazebo/">gazebo</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS2025 Documentation - MHSeals</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Getting Started</li>
+      <li class="breadcrumb-item active">ROS2</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>ros, short for Robot Operating System, is not an operating system.<br />
+ros is a set of software libraries and tools built to help people like us make software for robots! ros2 is an improvement on ros1.</p>
+<p>at the time of writing (October 2024), we are using ros2 humble.</p>
+<h2 id="how-does-ros2-work">how does ros2 work?</h2>
+<h3 id="the-ros2-graph">the ros2 graph</h3>
+<p><img alt="The ROS2 node graph." src="../ros2_nodegraph.gif" /></p>
+<h3 id="nodes">nodes</h3>
+<p>ros2 is built on a structure of nodes: a node is an executeable program that can perform tasks and operations. these nodes can communicate with each other using topics or services.
+for more information on nodes, <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html">check here</a>.</p>
+<h3 id="topics-publishers-and-subscribers"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html">topics, publishers and subscribers</a></h3>
+<p>a publisher sends a message to a topic, and subscribers listening to that topic will receive that information.</p>
+<p>there is no limit on how many topics you can publish and subscribe to (or make!)</p>
+<h3 id="services-servers-and-clients"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">services, servers, and clients</a></h3>
+<p>a service client sends a request to a server, and the server returns a response to the client.</p>
+<h3 id="actions"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html">actions</a></h3>
+<p><img alt="A visual breakdown of an action." src="../ros2_nodeactions.gif" />
+3 parts of an action:</p>
+<ul>
+<li>goal</li>
+<li>feedback</li>
+<li>result</li>
+</ul>
+<h3 id="packages">packages</h3>
+<p>a package is just a synonym for a piece of software. they're composed of folders containing scripts, launch files, and configuration files.<br />
+to update all your packages, run <code>colcon build</code> in your root directory. this command will create folders such as <code>build</code>, <code>install</code>, and <code>log</code>.</p>
+<h2 id="where-do-i-go-from-here">where do i go from here?</h2>
+<p>now that you understand how ros2 works, you can learn how to use some software that we use along with ros2.</p>
+<ul>
+<li><a href="../../nav/sim/gazebo/">gazebo</a> - a robot simulation program</li>
+<li><a href="../../nav/kiss_icp/">kiss_icp</a> - an odometry pipeline</li>
+</ul>
+<p>if you're not ready to get started with programming, you can also help expand this documentation by making pull requests!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../setup/setting_up_your_workspace/" class="btn btn-neutral float-left" title="Workspace setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mavros/" class="btn btn-neutral float-right" title="MAVROS">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../setup/setting_up_your_workspace/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mavros/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
