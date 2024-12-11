@@ -1,7 +1,4 @@
----
-descripton: Information about Gazebo
-documentation: https://gazebosim.org/docs/garden/tutorials/
----
+# gazebo
 gazebo is a simulation program we use to test our boat!
 instead of taking out our boat every time we need to test code, we simply run gazebo!
 * at the time of writing (2024), we are using Gazebo Garden. this should come preinstalled with the docker installation
