@@ -25,5 +25,4 @@ your basic workspace should have a tree similar to this when you are finished:
 
 ## basic commands
 1. update your packages by running `colcon build` in your root directory
-1. run [gazebo](gazebo.md) using the command `ros2 launch vrx_gz competition.launch.py`
-2. run [vrx](vrx.md) using the command `ros2 launch vrx_gazebo rviz.launch.py`
+2. run [gazebo](../nav/sim/gazebo.md) using the command `ros2 launch vrx_gz competition.launch.py`

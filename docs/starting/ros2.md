@@ -1,7 +1,3 @@
----
-descripton: documentation about ros2
-documentation: https://docs.ros.org/en/humble/index.html
----
 ros, short for Robot Operating System, is not an operating system.  
 ros is a set of software libraries and tools built to help people like us make software for robots! ros2 is an improvement on ros1.
 
@@ -33,8 +29,8 @@ to update all your packages, run `colcon build` in your root directory. this com
 ## where do i go from here?
 now that you understand how ros2 works, you can learn how to use some software that we use along with ros2.
 
-* [gazebo](gazebo.md) - a robot simulation program
-* [kiss_icp](kiss_icp.md) - an odometry pipeline
+* [gazebo](../nav/sim/gazebo.md) - a robot simulation program
+* [kiss_icp](../nav/kiss_icp.md) - an odometry pipeline
 
 
 if you're not ready to get started with programming, you can also help expand this documentation by making pull requests!

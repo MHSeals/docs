@@ -4,7 +4,6 @@ theme:
   name: readthedocs
 
 nav:
-  - Home: the_plan.md
   - Setup:
     - Installing Ubuntu: setup/installing_ubuntu.md
     - Workspace setup: setup/setting_up_your_workspace.md
