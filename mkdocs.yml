@@ -1,23 +1,24 @@
-site_name: CS2025 Documentation - MHSeals
+site_name: MHCSeals Docs
 
 theme:
-  name: readthedocs
+  name: ivory
 
 nav:
   - Setup:
     - Installing Ubuntu: setup/installing_ubuntu.md
-    - Workspace setup: setup/setting_up_your_workspace.md
+    - Workspace setup: setup/workspace_setup.md
   - Getting Started:
     - ROS2: starting/ros2.md
-    - MAVROS: starting/mavros.md
+    - Basic commands: starting/basic_commands.md
+    - How2read docs: starting/how2read.md
   - Hardware:
-    - Intel RealSense Camera: hardware/intel_realsense_camera.md
-    - VLP-16 LIDAR: hardware/vlp16_lidar.md
-  - Navigation:
-    - SLAM (Deprecated):
-      - nav/kiss_icp.md
-      - nav/slam_toolbox.md
-      - nav/sim/tf2.md
-      - nav/sim/URDF.md
+    - VLP-16 (LIDAR): hardware/vlp16.md
+    - WIFI Network: hardware/network.md
+  - Archive:
+    - kiss_icp: archive/kiss_icp.md
+    - MAVROS: archive/mavros.md
+    - slam_toolbox: archive/slam_toolbox.md
     - Simulation:
-      - nav/sim/gazebo.md
+      - Gazebo: archive/sim/gazebo.md
+      - tf2: archive/sim/tf2.md
+      - URDF: archive/sim/urdf.md

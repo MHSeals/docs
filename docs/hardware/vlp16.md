@@ -1,7 +1,4 @@
----
-descripton: 
-documentation: http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/PointCloud2.html
----
+# VLP-16 (LIDAR)
 we are using the VLP-16 lidar puck
 
 ## how to set up

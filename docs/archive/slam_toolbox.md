@@ -1,10 +1,7 @@
----
-descripton: Information about slam_toolbox
-documentation: https://docs.ros.org/en/humble/p/slam_toolbox/
-bryan's documentation: https://docs.google.com/document/d/1msz3Z5DdcRVLMJXQrmZ61iGfAP3T2CpFbgfcOO_6OnA/edit
----
+# slam_toolbox
 slam_toolbox is a package we use to implement the SLAM algorithm in roboboat :)
 
+[bryan's documentation](https://docs.google.com/document/d/1msz3Z5DdcRVLMJXQrmZ61iGfAP3T2CpFbgfcOO_6OnA/edit)
 ## what is slam?
 slam stands for Simultaneous Localization and Mapping… but what does that mean?!
 * **localization**: positioning yourself relative to a map without global positioning (like gps)

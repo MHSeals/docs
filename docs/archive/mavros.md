@@ -1,7 +1,4 @@
----
-descripton: Information about mavros
-documentation: N/A
----
+# MAVROS
 ## SetMode
 - create a `mavros_msgs.srv.SetMode` client for the `/mavros/set_mode` topic
 	- Mode options: `MANUAL`, `GUIDED`, `HOL`

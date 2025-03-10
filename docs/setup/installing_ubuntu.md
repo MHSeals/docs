@@ -1,7 +1,4 @@
----
-descripton: guide to installing ubuntu 22.04 on your laptop
-documentation: 
----
+# Installing Ubuntu
 ## prerequisites
 you will need:
 
