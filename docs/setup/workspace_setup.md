@@ -1,14 +1,15 @@
 # Workspace setup
 ## prerequisites
 - Ubuntu 22.04 (see [installing ubuntu 22.04](installing_ubuntu.md)) -- NO WSL!
-- all the instructions below are made for and only ubuntu 22.04
-- at least 8 gigabytes of ram
+- All the instructions below are made for both Ubuntu 22.04 and 20.04
+- At least 8 gigabytes of ram
 
 ## setup
-1. create a new directory (`mkdir roboboat_ws`)
-2. enter into directory, run `colcon build`
-3. create a src folder (`mkdir src`)
-4. install packages in the src directory
+1. Follow the instructions for install ros2 on your system at the official website [docs.ros.org](https://docs.ros.org/en/humble/Installation.html)
+2. create a new directory (`mkdir roboboat_ws`)
+3. enter into directory, run `colcon build`
+4. create a src folder (`mkdir src`)
+5. install packages in the src directory
     1. [mhsboat_ctrl](https://github.com/MHSeals/mhsboat_ctrl) -- `git clone https://github.com/MHSeals/mhsboat_ctrl`
 
 your basic workspace should have a tree similar to this when you are finished:

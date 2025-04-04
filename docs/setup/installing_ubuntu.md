@@ -1,9 +1,9 @@
 # Installing Ubuntu
 ## prerequisites
-you will need:
+You will need:
 
-- USB drive with at least 8 gigabytes
-  - if you don't have this, you can ask alec or me to do it for you
+- Spare USB drive with at least 8 gigabytes
+  - If you don't have this, you can ask alec, ryan, or tuyet (thats me!) to do it for you
 - A laptop with:
 	- at least 16 gigabytes of ram
 	- a port to connect your USB drive into
@@ -23,8 +23,3 @@ you will need:
 
 ## partitioning
 if you are completely removing windows and switching to ubuntu, you can just select the "wipe hard drive" option. ubuntu will automatically partition your hard drive for you
-
-these steps below are for people who want to dual boot ubuntu with windows.
-
-1. man who care just stop using windows :)
-* note to self: finish this later
