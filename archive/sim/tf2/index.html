@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <title>tf2 &mdash; MHCSeals Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../../.." class="site-name"> MHCSeals Docs</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><button class="section nav-item">Setup</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/installing_ubuntu/">Installing Ubuntu</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/workspace_setup/">Workspace setup</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Getting Started</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/ros2/">ROS2</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/basic_commands/">Basic commands</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/how2read/">How2read docs</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Hardware</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/vlp16/">VLP-16 (LIDAR)</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/network/">WIFI Network</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Archive</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../kiss_icp/">kiss_icp</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../mavros/">MAVROS</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../slam_toolbox/">slam_toolbox</a></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Simulation</button>
+<ul class="subnav">
+    <li class="toctree-l3"><a class="nav-item" href="../gazebo/">Gazebo</a></li>
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">tf2</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#links">links</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#the-tf-topic">the /tf topic</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#tf2-tools">tf2-tools</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../urdf/">URDF</a></li>
+</ul></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../gazebo/">&laquo; Previous</a></div>
+    <div class="next"><a href="../urdf/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../../.." class="site-name"> MHCSeals Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Archive &raquo; </li><li>Simulation</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="tf2">tf2</h1>
+<p>TF2 = TransForm 2</p>
+<h2 id="links">links</h2>
+<p>links =  parts of a robot (ie. Lidar, wheels, thrusters, and camera)
+links are joined together by joints</p>
+<h3 id="view-links-of-a-robot">view links of a robot:</h3>
+<ol>
+<li>Open Rviz</li>
+<li>Select the robot from the left panel</li>
+<li>expand the "links" tab</li>
+</ol>
+<h3 id="positions-and-rotations">positions and rotations</h3>
+<p>base_link is the origin of a robot, and all other parts of the robot are positioned relative to base_link (it is similar to classes and subclasses)
+arrows show hierarchy of the tree: the arrow points toward the parent
+- Red = X axis
+- Green = Y axis
+- Blue = Z axis
+![[tf2-visual.png]]</p>
+<h2 id="the-tf-topic">the /tf topic</h2>
+<h2 id="tf2-tools">tf2-tools</h2>
+<ul>
+<li>install via <code>sudo apt install ros-humble-tf2-tools</code></li>
+</ul>
+<h3 id="viewing-data">viewing data</h3>
+<p><code>ros2 run tf2_tools view_frames</code>
+creates 2 files: PDF and <a href="URDF.md">URDF</a> file
+PDF gives visual description of the tf2 'tree'</p></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../gazebo/" title="Gazebo"><span>Previous</span></a></div>
+        <div class="next"><a href="../urdf/" title="URDF"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../search/main.js"></script>
+</body>
+
+</html>

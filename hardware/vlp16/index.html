@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>ROS2 &mdash; MHCSeals Docs</title>
+    <title>VLP-16 (LIDAR) &mdash; MHCSeals Docs</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -45,18 +45,18 @@
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Getting Started</button>
 <ul class="subnav">
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">ROS2</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#how-does-ros2-work">how does ros2 work?</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#where-do-i-go-from-here">where do i go from here?</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../basic_commands/">Basic commands</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../how2read/">How2read docs</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../starting/ros2/">ROS2</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../starting/basic_commands/">Basic commands</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../starting/how2read/">How2read docs</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Hardware</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../hardware/vlp16/">VLP-16 (LIDAR)</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hardware/network/">WIFI Network</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">VLP-16 (LIDAR)</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#how-to-set-up">how to set up</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#pointcloud2-messages">PointCloud2 messages</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../network/">WIFI Network</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Archive</button>
 <ul class="subnav">
@@ -73,8 +73,8 @@
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../../setup/workspace_setup/">&laquo; Previous</a></div>
-    <div class="next"><a href="../basic_commands/">Next &raquo;</a></div>
+    <div class="previous"><a href="../../starting/how2read/">&laquo; Previous</a></div>
+    <div class="next"><a href="../network/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -86,42 +86,38 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Getting Started</li>
+    <li>Hardware</li>
 </ul>
 </nav>
-                <div id="content"><h1 id="ros-2">ROS 2</h1>
-<p>ros, short for Robot Operating System, is not an operating system.<br />
-ros is a set of software libraries and tools built to help people like us make software for robots! ros2 is an improvement on ros1.</p>
-<p>at the time of writing (October 2024), we are using ros2 humble.</p>
-<h2 id="how-does-ros2-work">how does ros2 work?</h2>
-<h3 id="the-ros2-graph">the ros2 graph</h3>
-<p><img alt="The ROS2 node graph." src="../ros2_nodegraph.gif" /></p>
-<h3 id="nodes">nodes</h3>
-<p>ros2 is built on a structure of nodes: a node is an executeable program that can perform tasks and operations. these nodes can communicate with each other using topics or services.
-for more information on nodes, <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html">check here</a>.</p>
-<h3 id="topics-publishers-and-subscribers"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html">topics, publishers and subscribers</a></h3>
-<p>a publisher sends a message to a topic, and subscribers listening to that topic will receive that information.</p>
-<p>there is no limit on how many topics you can publish and subscribe to (or make!)</p>
-<h3 id="services-servers-and-clients"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">services, servers, and clients</a></h3>
-<p>a service client sends a request to a server, and the server returns a response to the client.</p>
-<h3 id="actions"><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html">actions</a></h3>
-<p><img alt="A visual breakdown of an action." src="../ros2_nodeactions.gif" />
-3 parts of an action:</p>
+                <div id="content"><h1 id="vlp-16-lidar">VLP-16 (LIDAR)</h1>
+<p>We are using the VLP-16 lidar puck.</p>
+<p>The VLP-16 lidar will be unused from roboboat years 2026 forward.</p>
+<h2 id="how-to-set-up">how to set up</h2>
+<p>The lidar outputs <code>sensor_msgs.msg.PointCloud2</code> messages to the <code>/wamv/sensors/lidars/lidar_wamv_sensor/points</code> topic</p>
+<h2 id="pointcloud2-messages">PointCloud2 messages</h2>
+<p>The (relevant) contents of a PointCloud2 message:
+- point_step - # of bytes in a point (msg type: uint32)
+- row_step - # of bytes in a row of points (msg type: uint32)
+    - calculated by (# of points in a row * point_step)
+- fields[] - this is similar to a structure in C++ (msg type <code>sensor_msgs/PointField</code>)</p>
+<h3 id="pointfield"><a href="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/PointField.html">PointField</a></h3>
+<p>A fields[] message looks something like this:</p>
+<pre><code>mypointcloud.fields = [
+PointField('x',0,PointField.FLOAT32,1)
+PointField('y',4,PointField.FLOAT32,1)
+PointField('z',8,PointField.FLOAT32,1)
+PointField('intensity',12,PointField.FLOAT32,1)
+</code></pre>
 <ul>
-<li>goal</li>
-<li>feedback</li>
-<li>result</li>
-</ul>
-<h3 id="packages">packages</h3>
-<p>a package is just a synonym for a piece of software. they're composed of folders containing scripts, launch files, and configuration files.<br />
-to update all your packages, run <code>colcon build</code> in your root directory. this command will create folders such as <code>build</code>, <code>install</code>, and <code>log</code>.</p>
-<h2 id="where-do-i-go-from-here">where do i go from here?</h2>
-<p>now that you understand how ros2 works, you can learn how to use some software that we use along with ros2.</p>
-<p>if you're not ready to get started with programming, you can also help expand this documentation by making pull requests!</p></div>
+<li>attribute: a name (such as x,y,z,intensity) </li>
+<li>offset: the start index</li>
+<li>datatype: </li>
+<li>count:</li>
+</ul></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../../setup/workspace_setup/" title="Workspace setup"><span>Previous</span></a></div>
-        <div class="next"><a href="../basic_commands/" title="Basic commands"><span>Next</span></a></div>
+        <div class="previous"><a href="../../starting/how2read/" title="How2read docs"><span>Previous</span></a></div>
+        <div class="next"><a href="../network/" title="WIFI Network"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

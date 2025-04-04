@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <title>Gazebo &mdash; MHCSeals Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../../.." class="site-name"> MHCSeals Docs</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><button class="section nav-item">Setup</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/installing_ubuntu/">Installing Ubuntu</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/workspace_setup/">Workspace setup</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Getting Started</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/ros2/">ROS2</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/basic_commands/">Basic commands</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/how2read/">How2read docs</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Hardware</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/vlp16/">VLP-16 (LIDAR)</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/network/">WIFI Network</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Archive</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../kiss_icp/">kiss_icp</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../mavros/">MAVROS</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../slam_toolbox/">slam_toolbox</a></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Simulation</button>
+<ul class="subnav">
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Gazebo</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#how-to-use-gazebo">how to use gazebo</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#navigating-gazebo">navigating gazebo</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../tf2/">tf2</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../urdf/">URDF</a></li>
+</ul></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../../slam_toolbox/">&laquo; Previous</a></div>
+    <div class="next"><a href="../tf2/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../../.." class="site-name"> MHCSeals Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Archive &raquo; </li><li>Simulation</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="gazebo">gazebo</h1>
+<p>gazebo is a simulation program we use to test our boat!
+instead of taking out our boat every time we need to test code, we simply run gazebo!
+* at the time of writing (2024), we are using Gazebo Garden. this should come preinstalled with the docker installation</p>
+<h2 id="how-to-use-gazebo">how to use gazebo</h2>
+<p>launch gazebo using the command below:
+<code>ros2 launch vrx_gz competition.launch.py world:=sydney_regatta</code>
+once you open up gazebo, you'll probably be greeting with a frozen screen. don't worry, this is normal. give it a minute of two :]</p>
+<h2 id="navigating-gazebo">navigating gazebo</h2>
+<p><img alt="A screenshot of gazebo. 3 boxes are drawn on top of it." src="../gazebo.png" /></p>
+<h3 id="toolbar">toolbar</h3>
+<h3 id="main-view">main view</h3>
+<h3 id="panels">panels</h3>
+<ol>
+<li>click the 3 buttons on the top right corner</li>
+<li>type out the panel you want to add</li>
+<li>profit?</li>
+</ol></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../../slam_toolbox/" title="slam_toolbox"><span>Previous</span></a></div>
+        <div class="next"><a href="../tf2/" title="tf2"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../search/main.js"></script>
+</body>
+
+</html>

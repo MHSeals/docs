@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <title>URDF &mdash; MHCSeals Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../../.." class="site-name"> MHCSeals Docs</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><button class="section nav-item">Setup</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/installing_ubuntu/">Installing Ubuntu</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../setup/workspace_setup/">Workspace setup</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Getting Started</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/ros2/">ROS2</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/basic_commands/">Basic commands</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../starting/how2read/">How2read docs</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Hardware</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/vlp16/">VLP-16 (LIDAR)</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../../hardware/network/">WIFI Network</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Archive</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../../kiss_icp/">kiss_icp</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../mavros/">MAVROS</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../slam_toolbox/">slam_toolbox</a></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Simulation</button>
+<ul class="subnav">
+    <li class="toctree-l3"><a class="nav-item" href="../gazebo/">Gazebo</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../tf2/">tf2</a></li>
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">URDF</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#link">link</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#joint">joint</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../tf2/">&laquo; Previous</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../../.." class="site-name"> MHCSeals Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Archive &raquo; </li><li>Simulation</li>
+</ul>
+</nav>
+                <div id="content"><p>URDF = Unified Robot Description Format
+- used to generate <a href="../tf2/">TFs</a></p>
+<h2 id="making-a-urdf-file">making a urdf file</h2>
+<p>urdf files end with .urdf and are in XML format</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;robot name=&quot;myrobot&quot;&gt; 
+    &lt;!-- your links and joints go here! --&gt;
+&lt;/robot&gt;
+</code></pre>
+<h3 id="link">link</h3>
+<pre><code class="language-xml">&lt;link name=&quot;base_link&quot;&gt;
+    &lt;visual&gt; &lt;!-- physical properties --&gt;
+        &lt;geometry&gt;
+            &lt;box size=&quot;.2 .4 .6&quot;/&gt; &lt;!-- in meters --&gt;
+        &lt;/geometry&gt;
+        &lt;origin xyz=&quot;0 0 0&quot; rpy=&quot;0 0 0&quot;/&gt;
+        &lt;material name=&quot;orange&quot;&gt;
+    &lt;/visual&gt;
+&lt;/link&gt;
+</code></pre>
+<ul>
+<li>visual = visual propertries of a link<ul>
+<li>you will need to include a geometry tag to create shapes<ul>
+<li>box size property: measured in meters, size in XYZ</li>
+<li>material name property: defines color</li>
+</ul>
+</li>
+<li>origin: defines the offset of the visual (geometry)<ul>
+<li>use joints to move a link relative to another instead</li>
+<li>XYZ - determines position</li>
+<li>RPY = Roll (X axis), Pitch (Y axis), Yaw (Z axis) - determines rotation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="joint">joint</h3>
+<pre><code class="language-xml">&lt;joint name=&quot;my_cool_joint&quot; type=&quot;fixed&quot;&gt;
+    &lt;parent link=&quot;mom&quot;/&gt;
+    &lt;child link=&quot;son&quot;/&gt;
+    &lt;origin xyz=&quot;0 0 0.5&quot; rpy=&quot;0 0 0&quot;/&gt;
+&lt;/joint&gt;
+</code></pre>
+<ul>
+<li>join property type:</li>
+<li>the origin tag here represents the child's offset relative to the parent</li>
+</ul></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../tf2/" title="tf2"><span>Previous</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../search/main.js"></script>
+</body>
+
+</html>

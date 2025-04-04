@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>Installing Ubuntu &mdash; MHCSeals Docs</title>
+    <title>MAVROS &mdash; MHCSeals Docs</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -40,13 +40,8 @@
                 <ul class="root">
                     <li class="toctree-l1"><button class="section nav-item">Setup</button>
 <ul class="subnav">
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">Installing Ubuntu</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#prerequisites">prerequisites</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#installation">installation</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#partitioning">partitioning</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../workspace_setup/">Workspace setup</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../setup/installing_ubuntu/">Installing Ubuntu</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../setup/workspace_setup/">Workspace setup</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Getting Started</button>
 <ul class="subnav">
@@ -61,20 +56,25 @@
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Archive</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../archive/kiss_icp/">kiss_icp</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../archive/mavros/">MAVROS</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../archive/slam_toolbox/">slam_toolbox</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../kiss_icp/">kiss_icp</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">MAVROS</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#setmode">SetMode</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#thrusters">thrusters</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../slam_toolbox/">slam_toolbox</a></li>
     <li class="toctree-l2"><button class="section nav-item hide">Simulation</button>
 <ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../../archive/sim/gazebo/">Gazebo</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../archive/sim/tf2/">tf2</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../archive/sim/urdf/">URDF</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../sim/gazebo/">Gazebo</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../sim/tf2/">tf2</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../sim/urdf/">URDF</a></li>
 </ul></li>
 </ul></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="next"><a href="../workspace_setup/">Next &raquo;</a></div>
+    <div class="previous"><a href="../kiss_icp/">&laquo; Previous</a></div>
+    <div class="next"><a href="../slam_toolbox/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -86,44 +86,31 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Setup</li>
+    <li>Archive</li>
 </ul>
 </nav>
-                <div id="content"><h1 id="installing-ubuntu">Installing Ubuntu</h1>
-<h2 id="prerequisites">prerequisites</h2>
-<p>You will need:</p>
+                <div id="content"><h1 id="mavros">MAVROS</h1>
+<h2 id="setmode">SetMode</h2>
 <ul>
-<li>Spare USB drive with at least 8 gigabytes</li>
-<li>If you don't have this, you can ask alec, ryan, or tuyet (thats me!) to do it for you</li>
-<li>A laptop with:<ul>
-<li>at least 16 gigabytes of ram</li>
-<li>a port to connect your USB drive into</li>
+<li>create a <code>mavros_msgs.srv.SetMode</code> client for the <code>/mavros/set_mode</code> topic<ul>
+<li>Mode options: <code>MANUAL</code>, <code>GUIDED</code>, <code>HOL</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="installation">installation</h2>
-<ol>
-<li>Download <a href="https://www.ventoy.net/en/download.html">Ventoy</a> on your USB drive<ul>
-<li>Linux users: install the .tar.gz file and run <code>tar -xvf {.tar.gz file here}</code> to extract the file contents</li>
-<li>Windows users: install and extract the .zip file</li>
+<h2 id="thrusters">thrusters</h2>
+<ul>
+<li>publish a <code>geometry_msgs.msg.TwistStamped</code> message to the <code>/mavros/setpoint_velocity/cmd_vel</code> to control speed</li>
 </ul>
-</li>
-<li>Install the desktop version of <a href="https://releases.ubuntu.com/jammy/">Ubuntu 22.04</a></li>
-<li>Move the .iso file to the usb drive</li>
-<li>Boot into the BIOS and Disable Secure Boot<ol>
-<li>Restart your laptop and mash the F10, F11, and F12 buttons to boot into your BIOS</li>
-<li>Turn secure boot off (will probably be in the boot menu)</li>
-</ol>
-</li>
-<li>Boot into your USB drive and select the iso file</li>
-<li>Follow the installation process and DO NOT TURN OFF YOUR LAPTOP</li>
-<li>after the installation, reboot into your BIOS and enable Secure Boot</li>
-</ol>
-<h2 id="partitioning">partitioning</h2>
-<p>if you are completely removing windows and switching to ubuntu, you can just select the "wipe hard drive" option. ubuntu will automatically partition your hard drive for you</p></div>
+<h3 id="twiststamped-messages">TwistStamped messages</h3>
+<p>ie. twist message named 'mymessage':
+- Linear velocity can be modified with <code>mymessage.twist.linear.[x(forwards)/y(backwards)]</code>
+    - measured in m/s
+- Angular velocity (rotating the boat) can be modified with <code>mymessage.twist.angular.z</code>
+    - mesured in rad/s</p></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="next"><a href="../workspace_setup/" title="Workspace setup"><span>Next</span></a></div>
+        <div class="previous"><a href="../kiss_icp/" title="kiss_icp"><span>Previous</span></a></div>
+        <div class="next"><a href="../slam_toolbox/" title="slam_toolbox"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
