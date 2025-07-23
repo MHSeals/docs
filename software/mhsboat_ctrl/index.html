@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../../starting/how2read/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../buoy_model/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Roboboat CS Documentation - MHSeals Docs</title>
+        <title>Boat Control Software - MHSeals Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-roboboat-cs-documentation" class="md-skip">
+        <a href="#mhseals-boat-control-software-mhsboat_ctrl" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
+    <a href="../.." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Roboboat CS Documentation
+              Boat Control Software
             
           </span>
         </div>
@@ -205,7 +209,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="setup/installing_ubuntu/" class="md-tabs__link">
+        <a href="../../setup/installing_ubuntu/" class="md-tabs__link">
           
   
   
@@ -225,7 +229,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="starting/ros2/" class="md-tabs__link">
+        <a href="../../starting/ros2/" class="md-tabs__link">
           
   
   
@@ -241,11 +245,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="software/mhsboat_ctrl/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -265,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="hardware/overview/" class="md-tabs__link">
+        <a href="../../hardware/overview/" class="md-tabs__link">
           
   
   
@@ -285,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="website/" class="md-tabs__link">
+        <a href="../../website/" class="md-tabs__link">
           
   
   
@@ -305,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="archive/sim/gazebo/" class="md-tabs__link">
+        <a href="../../archive/sim/gazebo/" class="md-tabs__link">
           
   
   
@@ -325,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="archive/kiss_icp/" class="md-tabs__link">
+        <a href="../../archive/kiss_icp/" class="md-tabs__link">
           
   
   
@@ -359,7 +365,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
+    <a href="../.." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -418,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="setup/installing_ubuntu/" class="md-nav__link">
+      <a href="../../setup/installing_ubuntu/" class="md-nav__link">
         
   
   
@@ -441,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="setup/workspace_setup/" class="md-nav__link">
+      <a href="../../setup/workspace_setup/" class="md-nav__link">
         
   
   
@@ -512,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="starting/ros2/" class="md-nav__link">
+      <a href="../../starting/ros2/" class="md-nav__link">
         
   
   
@@ -535,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="starting/basic_commands/" class="md-nav__link">
+      <a href="../../starting/basic_commands/" class="md-nav__link">
         
   
   
@@ -558,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="starting/how2read/" class="md-nav__link">
+      <a href="../../starting/how2read/" class="md-nav__link">
         
   
   
@@ -585,24 +591,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -615,7 +626,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Software
@@ -626,10 +637,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="software/mhsboat_ctrl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Boat Control Software
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -640,6 +673,209 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture &amp; Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture &amp; Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-global-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Global Coordinates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modularity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modularity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-simulation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Simulation Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-packages-their-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Packages &amp; Their Roles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Packages &amp; Their Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mhsboat_ctrl" class="md-nav__link">
+    <span class="md-ellipsis">
+      mhsboat_ctrl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulated_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      simulated_map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      display_map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buoy_recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      buoy_recognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#center_of_clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      center_of_clusters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bag_recorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      bag_recorder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-loop-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Loop &amp; Execution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building &amp; Running
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-extending" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing &amp; Extending
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      References &amp; Links
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -652,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="software/buoy_model/" class="md-nav__link">
+      <a href="../buoy_model/" class="md-nav__link">
         
   
   
@@ -675,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="software/boat_interfaces/" class="md-nav__link">
+      <a href="../boat_interfaces/" class="md-nav__link">
         
   
   
@@ -746,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/overview/" class="md-nav__link">
+      <a href="../../hardware/overview/" class="md-nav__link">
         
   
   
@@ -769,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/jetson_xavier_nx/" class="md-nav__link">
+      <a href="../../hardware/jetson_xavier_nx/" class="md-nav__link">
         
   
   
@@ -792,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/odroid/" class="md-nav__link">
+      <a href="../../hardware/odroid/" class="md-nav__link">
         
   
   
@@ -815,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/cubeorange/" class="md-nav__link">
+      <a href="../../hardware/cubeorange/" class="md-nav__link">
         
   
   
@@ -838,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/zed_2i/" class="md-nav__link">
+      <a href="../../hardware/zed_2i/" class="md-nav__link">
         
   
   
@@ -861,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/vlp16/" class="md-nav__link">
+      <a href="../../hardware/vlp16/" class="md-nav__link">
         
   
   
@@ -884,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/network/" class="md-nav__link">
+      <a href="../../hardware/network/" class="md-nav__link">
         
   
   
@@ -955,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="website/" class="md-nav__link">
+      <a href="../../website/" class="md-nav__link">
         
   
   
@@ -1026,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/sim/gazebo/" class="md-nav__link">
+      <a href="../../archive/sim/gazebo/" class="md-nav__link">
         
   
   
@@ -1049,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/sim/tf2/" class="md-nav__link">
+      <a href="../../archive/sim/tf2/" class="md-nav__link">
         
   
   
@@ -1072,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/sim/urdf/" class="md-nav__link">
+      <a href="../../archive/sim/urdf/" class="md-nav__link">
         
   
   
@@ -1143,7 +1379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/kiss_icp/" class="md-nav__link">
+      <a href="../../archive/kiss_icp/" class="md-nav__link">
         
   
   
@@ -1166,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/mavros/" class="md-nav__link">
+      <a href="../../archive/mavros/" class="md-nav__link">
         
   
   
@@ -1189,7 +1425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/slam_toolbox/" class="md-nav__link">
+      <a href="../../archive/slam_toolbox/" class="md-nav__link">
         
   
   
@@ -1239,27 +1475,183 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Start
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#main-sections" class="md-nav__link">
+  <a href="#architecture-principles" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Sections
+      Architecture &amp; Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture &amp; Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-global-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Global Coordinates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modularity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modularity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-simulation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Simulation Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-packages-their-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Packages &amp; Their Roles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Packages &amp; Their Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mhsboat_ctrl" class="md-nav__link">
+    <span class="md-ellipsis">
+      mhsboat_ctrl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulated_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      simulated_map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      display_map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buoy_recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      buoy_recognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#center_of_clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      center_of_clusters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bag_recorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      bag_recorder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task System
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribute" class="md-nav__link">
+  <a href="#main-loop-execution" class="md-nav__link">
     <span class="md-ellipsis">
-      Contribute
+      Main Loop &amp; Execution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building &amp; Running
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-extending" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing &amp; Extending
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      References &amp; Links
     </span>
   </a>
   
@@ -1281,45 +1673,141 @@
 
 
 
-<h1 id="welcome-to-roboboat-cs-documentation">Welcome to Roboboat CS Documentation<a class="headerlink" href="#welcome-to-roboboat-cs-documentation" title="Permanent link">&para;</a></h1>
-<p>This site is the central hub for all things Computer Science at MHSeals. Here you'll find guides, tutorials, and reference material for robotics, ROS2, hardware, simulation, and more.</p>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>New to Roboboat?</strong></li>
-<li><a href="starting/ros2/">Getting Started with ROS2</a></li>
-<li><a href="setup/workspace_setup/">Workspace Setup Guide</a></li>
-<li><strong>Basic Commands:</strong> <a href="starting/basic_commands/">Essential ROS2 Commands</a></li>
-<li><strong>How to Read Docs:</strong> <a href="starting/how2read/">Documentation Guide</a></li>
-</ul>
-<h2 id="main-sections">Main Sections<a class="headerlink" href="#main-sections" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Hardware</strong></li>
-<li><a href="hardware/network/">Network Setup</a></li>
-<li><a href="hardware/vlp16/">VLP-16 Lidar</a></li>
-<li><strong>Simulation &amp; SLAM</strong></li>
-<li><a href="archive/sim/gazebo/">Gazebo Simulation</a></li>
-<li><a href="archive/slam_toolbox/">SLAM Toolbox</a></li>
-<li><a href="archive/kiss_icp/">KISS-ICP</a></li>
-<li><a href="archive/mavros/">MAVROS</a></li>
-<li><strong>Setup</strong></li>
-<li><a href="setup/installing_ubuntu/">Installing Ubuntu</a></li>
-<li><a href="setup/workspace_setup/">Workspace Setup</a></li>
-<li><strong>Website</strong></li>
-<li><a href="website/">Website Info</a></li>
-</ul>
-<h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">&para;</a></h2>
-<p>Help us improve! Submit a pull request on <a href="https://github.com/MHSeals/docs">GitHub</a> to add or update documentation.</p>
+<h1 id="mhseals-boat-control-software-mhsboat_ctrl">MHSeals Boat Control Software (mhsboat_ctrl)<a class="headerlink" href="#mhseals-boat-control-software-mhsboat_ctrl" title="Permanent link">&para;</a></h1>
+<p>This page provides an in-depth overview of the MHSeals boat control software, its architecture, packages, and usage. The control system is designed for modularity, simulation support, and robust autonomous operation using ROS 2.</p>
+<p><em>This code is being actively developed and may change frequently so this documentation may not always be up-to-date. Please refer to the GitHub repository for the latest code and updates.</em></p>
 <hr />
-<p>For more info, visit <a href="https://docs.mhsroboboat.com">docs.mhsroboboat.com</a></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Repository:</strong> <a href="https://github.com/MHSeals/mhsboat_ctrl">MHSeals/mhsboat_ctrl</a></li>
+<li><strong>Main Language:</strong> Python</li>
+<li><strong>Framework:</strong> ROS 2 Humble</li>
+<li><strong>OS:</strong> Ubuntu 22.04</li>
+</ul>
+<hr />
+<h2 id="architecture-principles">Architecture &amp; Principles<a class="headerlink" href="#architecture-principles" title="Permanent link">&para;</a></h2>
+<h3 id="1-global-coordinates">1. Global Coordinates<a class="headerlink" href="#1-global-coordinates" title="Permanent link">&para;</a></h3>
+<p>All navigation and movement are now referenced to a global coordinate system (e.g., map or GPS coordinates). This allows for easier integration with mapping, localization, and multi-vehicle scenarios.</p>
+<h3 id="2-modularity">2. Modularity<a class="headerlink" href="#2-modularity" title="Permanent link">&para;</a></h3>
+<p>Tasks are implemented as separate classes inheriting from a base <code>Task</code> class. New tasks can be added without affecting existing code.</p>
+<h3 id="3-simulation-support">3. Simulation Support<a class="headerlink" href="#3-simulation-support" title="Permanent link">&para;</a></h3>
+<p>The system can run in simulation mode using a simulated map, allowing for development and testing without hardware.</p>
+<hr />
+<h2 id="main-packages-their-roles">Main Packages &amp; Their Roles<a class="headerlink" href="#main-packages-their-roles" title="Permanent link">&para;</a></h2>
+<h3 id="mhsboat_ctrl">mhsboat_ctrl<a class="headerlink" href="#mhsboat_ctrl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Main control logic, task management, decision-making, actuator interfacing.</li>
+<li><strong>Key Files:</strong></li>
+<li><code>mhsboat_ctrl.py</code>: Main loop, task execution, sensor integration.</li>
+<li><code>task.py</code>: Base class for all tasks.</li>
+<li><code>tasks/</code>: Individual task implementations (navigation, obstacle avoidance, etc).</li>
+<li><strong>ROS Topics:</strong></li>
+<li>Subscribes: <code>/mhsboat_ctrl/map</code></li>
+<li>Publishes: <code>/mavros/setpoint_velocity/cmd_vel</code></li>
+</ul>
+<h3 id="sensors">sensors<a class="headerlink" href="#sensors" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Sensor data collection, fusion, and processing (camera, LiDAR, odometry).</li>
+<li><strong>Key Files:</strong></li>
+<li><code>sensors.py</code>: Main sensor node.</li>
+<li><code>utils/lidar.py</code>: LiDAR data utilities.</li>
+<li><strong>ROS Topics:</strong></li>
+<li>Subscribes: <code>/AiOutput</code>, <code>/center_of_clusters</code>, <code>/odometry/filtered</code></li>
+<li>Publishes: <code>/mhsboat_ctrl/map</code>, <code>/mhsboat_ctrl/buoy_clusters</code></li>
+</ul>
+<h3 id="simulated_map">simulated_map<a class="headerlink" href="#simulated_map" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Provides a virtual course for simulation and testing.</li>
+<li><strong>Key Files:</strong></li>
+<li><code>gui.py</code>: GUI for visualizing the simulated environment.</li>
+</ul>
+<h3 id="display_map">display_map<a class="headerlink" href="#display_map" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Visualizes map data and detected objects.</li>
+<li><strong>Key Files:</strong></li>
+<li><code>testgui.py</code>: GUI for map display.</li>
+</ul>
+<h3 id="buoy_recognition">buoy_recognition<a class="headerlink" href="#buoy_recognition" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Detects and classifies buoys/objects using camera images and YOLO model.</li>
+<li><strong>Key Files:</strong></li>
+<li><code>buoy_recognition.py</code>: Main node for object detection.</li>
+<li><strong>Parameters:</strong></li>
+<li><code>headless_mode</code> (default: True): Controls image display.</li>
+<li><strong>ROS Topics:</strong></li>
+<li>Subscribes: <code>/image_raw</code></li>
+<li>Publishes: <code>/AiOutput</code></li>
+</ul>
+<h3 id="center_of_clusters">center_of_clusters<a class="headerlink" href="#center_of_clusters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Processes LiDAR point clouds to identify clusters (buoys, obstacles).</li>
+<li><strong>Key Files:</strong></li>
+<li><code>center_of_clusters.py</code>: Main clustering node.</li>
+<li><strong>ROS Topics:</strong></li>
+<li>Subscribes: <code>/velodyne_points</code></li>
+<li>Publishes: <code>/center_of_clusters</code></li>
+</ul>
+<h3 id="bag_recorder">bag_recorder<a class="headerlink" href="#bag_recorder" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Records ROS 2 bag files for data logging and analysis.</li>
+<li><strong>Key Files:</strong></li>
+<li><code>bag_recorder.py</code>: Main recording node.</li>
+<li><strong>ROS Topics:</strong></li>
+<li>Subscribes: <code>/mhsboat_ctrl/map</code></li>
+</ul>
+<hr />
+<h2 id="task-system">Task System<a class="headerlink" href="#task-system" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Tasks are stored in <code>mhsboat_ctrl/tasks/</code>.</li>
+<li>Each task is a class inheriting from <code>Task</code> (in <code>task.py</code>).</li>
+<li>The base <code>Task</code> class defines <code>run</code> and <code>search</code> methods.</li>
+<li>To add a new task: create a new file/class in <code>tasks/</code>, inherit from <code>Task</code>, and register with <code>BoatController.add_task</code>.</li>
+</ul>
+<hr />
+<h2 id="main-loop-execution">Main Loop &amp; Execution<a class="headerlink" href="#main-loop-execution" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The main loop (in <code>mhsboat_ctrl.py</code>) continuously searches for and executes tasks.</li>
+<li>Each task receives a <code>Sensors</code> object for data and map access.</li>
+<li>Task completion and status are managed using enums (<code>TaskCompletionStatus</code>, <code>TaskStatus</code> in <code>enums.py</code>).</li>
+</ul>
+<hr />
+<h2 id="simulation-mode">Simulation Mode<a class="headerlink" href="#simulation-mode" title="Permanent link">&para;</a></h2>
+<p><em>This mode does not currently work, it is being worked on.</em></p>
+<ul>
+<li>Run with parameters: <code>use_simulated_map</code> and <code>map_file</code>.</li>
+<li>Example:
+  <code>bash
+  ros2 run mhsboat_ctrl mhsboat_ctrl --ros-args -p use_simulated_map:=true -p map_file:=src/mhsboat_ctrl/maps/taskone.yaml</code></li>
+</ul>
+<hr />
+<h2 id="building-running">Building &amp; Running<a class="headerlink" href="#building-running" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Build with symlink install for easy code changes:
+  <code>bash
+  cd ~/ros_ws
+  colcon build --symlink-install --packages-select mhsboat_ctrl</code></li>
+<li>See <a href="https://github.com/MHSeals/mhsboat_ctrl/blob/main/commands_to_run_boat.md">commands_to_run_boat.md</a> for run instructions.</li>
+</ul>
+<hr />
+<h2 id="contributing-extending">Contributing &amp; Extending<a class="headerlink" href="#contributing-extending" title="Permanent link">&para;</a></h2>
+<ul>
+<li>See <a href="https://github.com/MHSeals/mhsboat_ctrl/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines.</li>
+<li>Modular design makes it easy to add new sensors, tasks, or simulation features.</li>
+</ul>
+<hr />
+<h2 id="references-links">References &amp; Links<a class="headerlink" href="#references-links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/MHSeals/mhsboat_ctrl">MHSeals/mhsboat_ctrl GitHub</a></li>
+<li><a href="https://github.com/MHSeals/boat_interfaces">Custom messages: boat_interfaces</a></li>
+<li><a href="https://docs.ros.org/en/humble/index.html">ROS 2 Documentation</a></li>
+</ul>
+<hr />
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1338,6 +1826,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../starting/how2read/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to read ROS docs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                How to read ROS docs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../buoy_model/" class="md-footer__link md-footer__link--next" aria-label="Next: Buoy Detection Model">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Buoy Detection Model
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1368,10 +1894,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.path", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.path", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
