@@ -1,4 +1,5 @@
 site_name: MHSeals Docs
+site_url: https://docs.mhsroboboat.com
 
 theme:
   name: material
