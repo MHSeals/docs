@@ -1,4 +1,4 @@
-site_name: MHCSeals Docs
+site_name: MHSeals Docs
 
 theme:
   name: material
@@ -43,8 +43,17 @@ nav:
   - Getting Started:
     - ROS2: starting/ros2.md
     - Basic commands: starting/basic_commands.md
-    - How2read docs: starting/how2read.md
+    - How to read ROS docs: starting/how2read.md
+  - Software:
+    - Boat Control Software: software/mhsboat_ctrl.md
+    - Buoy Detection Model: software/buoy_model.md
+    - ROS2 Interfaces: software/boat_interfaces.md
   - Hardware:
+    - Overview: hardware/overview.md
+    - Jetson Xavier NX: hardware/jetson_xavier_nx.md
+    - Odroid: hardware/odroid.md
+    - Cube Orange: hardware/cubeorange.md
+    - Zed 2i: hardware/zed_2i.md
     - VLP-16 (LIDAR): hardware/vlp16.md
     - WIFI Network: hardware/network.md
   - Website:

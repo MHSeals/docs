@@ -1,33 +1,56 @@
-# ROS 2
-ros, short for Robot Operating System, is not an operating system.  
-ros is a set of software libraries and tools built to help people like us make software for robots! ros2 is an improvement on ros1.
+# ROS 2 Overview
 
-at the time of writing (October 2024), we are using ros2 humble.
+Welcome to ROS 2! ROS (Robot Operating System), is not actually an operating system, but is a powerful set of libraries and tools for building robot software. ROS 2 is the modern, improved version of ROS 1, and our team uses the **Humble** distribution (as of October 2024).
 
-## how does ros2 work?
-### the ros2 graph
-![The ROS2 node graph.](./ros2_nodegraph.gif)
-### nodes
-ros2 is built on a structure of nodes: a node is an executeable program that can perform tasks and operations. these nodes can communicate with each other using topics or services.
-for more information on nodes, [check here](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html).
-### [topics, publishers and subscribers](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
-a publisher sends a message to a topic, and subscribers listening to that topic will receive that information.
+---
 
-there is no limit on how many topics you can publish and subscribe to (or make!)
-### [services, servers, and clients](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
-a service client sends a request to a server, and the server returns a response to the client.
-### [actions](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html)
-![A visual breakdown of an action.](./ros2_nodeactions.gif)
-3 parts of an action:
+## What is ROS 2?
 
-- goal
-- feedback
-- result
-### packages
-a package is just a synonym for a piece of software. they're composed of folders containing scripts, launch files, and configuration files.  
-to update all your packages, run `colcon build` in your root directory. this command will create folders such as `build`, `install`, and `log`.
+ROS 2 helps you create modular, scalable, and robust robotics applications. It provides a flexible framework for writing robot code, connecting sensors, actuators, and algorithms.
 
-## where do i go from here?
-now that you understand how ros2 works, you can learn how to use some software that we use along with ros2.
+---
 
-if you're not ready to get started with programming, you can also help expand this documentation by making pull requests!
+## How Does ROS 2 Work?
+
+![ROS2 node graph](./ros2_nodegraph.gif)
+ROS 2 applications are built from interconnected nodes that communicate with each other.
+
+### Nodes
+A **node** is an executable program that performs a specific task. Nodes can communicate using topics, services, and actions.
+- [Learn more about nodes](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
+
+### Topics, Publishers, and Subscribers
+- A **publisher** sends messages to a topic.
+- **Subscribers** listen for messages on topics.
+- You can create as many topics as you need!
+- [Topics tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
+
+### Services, Servers, and Clients
+- A **service client** sends a request to a server, which returns a response.
+- [Services tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
+
+### Actions
+![ROS2 action breakdown](./ros2_nodeactions.gif)
+Actions allow for long-running tasks with feedback. They have three parts:
+1. **Goal**
+2. **Feedback**
+3. **Result**
+- [Actions tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html)
+
+### Packages
+A **package** is a collection of code, launch files, and configuration for a specific functionality. To build or update all packages, run:
+
+```sh
+colcon build
+```
+
+This creates `build`, `install`, and `log` folders in your workspace.
+
+---
+
+## Next Steps
+
+- Ready to start programming? Explore our [Basic Commands](./basic_commands.md) and [Workspace Setup](../setup/workspace_setup.md) guides.
+- Want to help improve these docs? Submit a pull request on [GitHub](https://github.com/MHSeals/docs)!
+
+---

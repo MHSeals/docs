@@ -7,21 +7,20 @@ The website is available at [mhsroboboat.com](https://mhsroboboat.com).
 ## Local Development
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/MHSeals/website2025.git
-   cd website2025
-   ```
+```bash
+git clone https://github.com/MHSeals/website2025.git
+cd website2025
+```
 
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
 4. Open your browser and navigate to `http://localhost:4321` to view the site.
 
@@ -31,20 +30,20 @@ The website is (as of me writing this) hosted on Cloudflare Pages (on my account
 Because of this, the main branch is protected and requires pull requests to be merged. So you must either fork the repository or create a branch to make changes.
 
 1. Create a new branch:
-   ```bash
-   git checkout -b my-feature-branch
-   ```
+```bash
+git checkout -b my-feature-branch
+```
 
 2. Make your changes and commit them:
-   ```bash
-   git add .
-   git commit -m "Description of my changes"
-   ```
+```bash
+git add .
+git commit -m "Description of my changes"
+```
 
 3. Push your branch to the remote repository:
-   ```bash
-   git push origin my-feature-branch
-   ```
+```bash
+git push origin my-feature-branch
+```
 
 4. Open a pull request on GitHub to merge your changes into the `main` branch.
 5. Once the pull request is approved and merged, your changes will be automatically deployed to the live site.
@@ -68,13 +67,13 @@ The website contains pages for previous years, so you can go back and look at th
    replacing `2025` with the year you want to add.
 
    Example:
-   ```javascript
-    export function getStaticPaths() {
-         return [
-              { params: { year: "2025" }},
-              { params: { year: "2024" }},
-              // Add more years as needed
-         ];
-    }
-    ```
+```javascript
+export function getStaticPaths() {
+   return [
+         { params: { year: "2025" }},
+         { params: { year: "2024" }},
+         // Add more years as needed
+   ];
+}
+```
 7. Follow the steps in the "Pushing Changes" section to create a pull request and deploy the changes.
