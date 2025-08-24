@@ -9,45 +9,50 @@ This is the home page for the documentation over Computer Science at MHSeals. He
 ## Main Section Descriptions
 
 ### Archive
->Description....
+>Description...
 ### Hardware
->Description....
+>Description...
 ### Setup
->Description....
+>Description...
 ### Sim
->Description....
+>Description...
 ### Custom Implementation
->Description....
+>Description...
 ### Starting
->Description....
+>Description...
 ### Website
->Description....
+>Description...
 
 ## Table of Contents
 
 >### Archive
 >>- [KISS-ICP][kiss-icp]
 >>- [MAVROS][mavros]
->- [SLAM Toolbox][slam-toolbox]
+>>- [SLAM Toolbox][slam-toolbox]
 >### Hardware
+>>- [Overview][overview]
 >>- [Cube Orange][cube-orange]
 >>- [Jetson Xavier NX][jetson-xavier-nx]
 >>- [Network][network]
 >>- [Odroid][odroid]
->>- [Overview][overview]
 >>- [Velodyne VLP-16][vlp16]
 >>- [Zed2i][zed-2i]
 >### Setup
->>[Installing Ubuntu][installing-ubuntu]
->>[Workspace Setup[workspace-setup]]
+>>- [Installing Ubuntu][installing-ubuntu]
+>>- [Workspace Setup][workspace-setup]
 >### Sim
->>Description....
->### Software
->>Description....
+>>- [Gazebo][gazebo]
+>>- [TF2][tf2]
+>>- [URDF][urdf]
+>### Custom Implementation
+>>- [Boat Interfaces][boat-interfaces]
+>>- [Buoy model][buoy-model]
+>>- [MHSboat Ctrl][mhsboat-ctrl]
 >### Starting
->>Description....
+>>- [How To Read][how-to-read]
+>>- [Ros2][ros2]
 >### Website
->>Description....
+>>- [Website Documentation][website-documentation]
 
 ## Contribute
 
