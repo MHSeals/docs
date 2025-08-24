@@ -41,7 +41,9 @@ plugins:
   - search
   - autorefs
 
+
 markdown_extensions:
+  - attr_list
   - toc:
       permalink: True
 copyright: Copyright &copy; 2025 MHS Seals

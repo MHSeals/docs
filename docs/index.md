@@ -1,7 +1,7 @@
-[](){ #home }
 ---
 title: Roboboat CS Documentation
 ---
+[](){ #home }
 
 # Welcome to Roboboat CS Documentation
 
