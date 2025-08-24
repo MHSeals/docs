@@ -18,7 +18,7 @@ arrows show hierarchy of the tree: the arrow points toward the parent
 - Red = X axis
 - Green = Y axis
 - Blue = Z axis
-![[tf2-visual.png]]
+![tf2 visual](tf2-visual.png)
 
 ## the /tf topic
 ## tf2-tools
