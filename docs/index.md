@@ -10,8 +10,8 @@ This site is the central hub for all things Computer Science at MHSeals. Here yo
 ## Quick Start
 
 - **New to Roboboat?**
-  - [Getting Started with ROS2][ros2]
-  - [Workspace Setup Guide][workspace-setup]
+- [Getting Started with ROS2][ros2]
+- [Workspace Setup Guide][workspace-setup]
 - **Basic Commands:** [Essential ROS2 Commands][basic-commands]
 - **How to Read Docs:** [Documentation Guide][how-to-read]
 

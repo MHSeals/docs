@@ -10,8 +10,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: purple
-      accent: blue
+      primary: #005A9C
+      accent: #191970
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -19,8 +19,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: purple
-      accent: blue
+      primary: #005A9C
+      accent: #191970
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
