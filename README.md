@@ -18,6 +18,5 @@ mkdocs serve
 Once you're done editing, build the website and push it onto the gh-pages branch.
 ```
 mkdocs build
-cd site
 mkdocs gh-deploy
 ```
