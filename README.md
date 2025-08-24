@@ -10,6 +10,7 @@ Now install MkDocs along with the "Ivory" theme:
 ```
 pip install mkdocs
 pip install mkdocs-ivory
+pip install mkdocs-material
 ```
 Finally, launch the live server that will update automatically as you make/save changes:
 ```
