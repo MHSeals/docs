@@ -6,10 +6,9 @@ First, clone the repository:
 ```
 git clone https://github.com/MHSeals/docs.git
 ```
-Now install MkDocs along with the "Ivory" theme:
+Now install MkDocs along with the "Material" theme:
 ```
 pip install mkdocs
-pip install mkdocs-ivory
 pip install mkdocs-material
 ```
 Finally, launch the live server that will update automatically as you make/save changes:
