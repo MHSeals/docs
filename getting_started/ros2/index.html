@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://docs.mhsroboboat.com/archive/">
+        <link rel="canonical" href="https://docs.mhsroboboat.com/getting_started/ros2/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../how_to_read/">
       
       
-        <link rel="next" href="kiss_icp/">
+        <link rel="next" href="../../custom_implementation/boat_interfaces/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Home - MHSeals Docs</title>
+        <title>ROS2 - MHSeals Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-roboboat-cs-documentation" class="md-skip">
+        <a href="#ros-2-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
+    <a href="../.." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              ROS2
             
           </span>
         </div>
@@ -121,7 +121,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
@@ -209,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -232,11 +232,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../how_to_read/" class="md-tabs__link">
           
   
   
-  Archive
+  Getting Started
 
         </a>
       </li>
@@ -252,7 +252,27 @@
     
     
       <li class="md-tabs__item">
-        <a href="../hardware/cube_orange/" class="md-tabs__link">
+        <a href="../../custom_implementation/boat_interfaces/" class="md-tabs__link">
+          
+  
+  
+  Custom Implementation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardware/overview/" class="md-tabs__link">
           
   
   
@@ -272,7 +292,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../setup/installing_ubuntu/" class="md-tabs__link">
+        <a href="../../setup/installing_ubuntu/" class="md-tabs__link">
           
   
   
@@ -292,11 +312,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../sim/gazebo/" class="md-tabs__link">
+        <a href="../../simulation/gazebo/" class="md-tabs__link">
           
   
   
-  Sim
+  Simulation
 
         </a>
       </li>
@@ -312,47 +332,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../software/boat_interfaces/" class="md-tabs__link">
-          
-  
-  
-  Software
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../starting/how_to_read/" class="md-tabs__link">
-          
-  
-  
-  Starting
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../website/" class="md-tabs__link">
+        <a href="../../website/" class="md-tabs__link">
           
   
   
@@ -386,7 +366,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
+    <a href="../.." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -404,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -450,7 +430,7 @@
   
   
   <span class="md-ellipsis">
-    Archive
+    Getting Started
     
   </span>
   
@@ -461,9 +441,32 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Archive
+            Getting Started
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_read/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How To Read
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -486,7 +489,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    ROS2
     
   </span>
   
@@ -499,7 +502,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    ROS2
     
   </span>
   
@@ -522,73 +525,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-section-descriptions" class="md-nav__link">
+  <a href="#what-is-ros-2" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Section Descriptions
+      What is ROS 2?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Main Section Descriptions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-ros-2-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does ROS 2 Work?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How Does ROS 2 Work?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#archive" class="md-nav__link">
+  <a href="#nodes" class="md-nav__link">
     <span class="md-ellipsis">
-      Archive
+      Nodes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
+  <a href="#topics-publishers-and-subscribers" class="md-nav__link">
     <span class="md-ellipsis">
-      Hardware
+      Topics, Publishers, and Subscribers
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#services-servers-and-clients" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      Services, Servers, and Clients
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sim" class="md-nav__link">
+  <a href="#actions" class="md-nav__link">
     <span class="md-ellipsis">
-      Sim
+      Actions
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
+  <a href="#packages" class="md-nav__link">
     <span class="md-ellipsis">
-      Software
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#starting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Starting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#website" class="md-nav__link">
-    <span class="md-ellipsis">
-      Website
+      Packages
     </span>
   </a>
   
@@ -600,60 +594,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Table of Contents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archive_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Archive
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute
+      Next Steps
     </span>
   </a>
   
@@ -663,98 +606,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="kiss_icp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Kiss icp
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="mavros/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mavros
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="slam_toolbox/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Slam toolbox
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tf2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tf2
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -793,7 +644,7 @@
   
   
   <span class="md-ellipsis">
-    Hardware
+    Custom Implementation
     
   </span>
   
@@ -804,7 +655,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Hardware
+            Custom Implementation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -815,12 +666,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/cube_orange/" class="md-nav__link">
+      <a href="../../custom_implementation/boat_interfaces/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Cube orange
+    Boat Interfaces
     
   </span>
   
@@ -838,12 +689,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/jetson_xavier_nx/" class="md-nav__link">
+      <a href="../../custom_implementation/buoy_model/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Jetson xavier nx
+    Buoy Model
     
   </span>
   
@@ -861,104 +712,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/network/" class="md-nav__link">
+      <a href="../../custom_implementation/mhsboat_ctrl/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Network
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/odroid/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Odroid
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/vlp16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vlp16
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/zed_2i/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Zed 2i
+    mhsboat_ctrl
     
   </span>
   
@@ -1002,7 +761,7 @@
   
   
   <span class="md-ellipsis">
-    Setup
+    Hardware
     
   </span>
   
@@ -1013,7 +772,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Setup
+            Hardware
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1024,12 +783,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/installing_ubuntu/" class="md-nav__link">
+      <a href="../../hardware/overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installing ubuntu
+    Overview
     
   </span>
   
@@ -1047,12 +806,127 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/workspace_setup/" class="md-nav__link">
+      <a href="../../hardware/cube_orange/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Workspace setup
+    Cube Orange
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/jetson_xavier_nx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jetson Xavier NX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/odroid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Odroid
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/vlp16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VLP16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/zed_2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zed 2I
     
   </span>
   
@@ -1096,7 +970,7 @@
   
   
   <span class="md-ellipsis">
-    Sim
+    Setup
     
   </span>
   
@@ -1107,7 +981,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Sim
+            Setup
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1118,12 +992,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../sim/gazebo/" class="md-nav__link">
+      <a href="../../setup/installing_ubuntu/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Gazebo
+    Installing Ubuntu
     
   </span>
   
@@ -1141,35 +1015,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../sim/tf2/" class="md-nav__link">
+      <a href="../../setup/workspace_setup/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Tf2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sim/urdf/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Urdf
+    Workspace Setup
     
   </span>
   
@@ -1213,7 +1064,7 @@
   
   
   <span class="md-ellipsis">
-    Software
+    Simulation
     
   </span>
   
@@ -1224,7 +1075,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Software
+            Simulation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1235,12 +1086,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/boat_interfaces/" class="md-nav__link">
+      <a href="../../simulation/gazebo/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Boat interfaces
+    Gazebo
     
   </span>
   
@@ -1258,12 +1109,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/buoy_model/" class="md-nav__link">
+      <a href="../../simulation/tf2/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Buoy model
+    TF2
     
   </span>
   
@@ -1281,12 +1132,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/mhsboat_ctrl/" class="md-nav__link">
+      <a href="../../simulation/urdf/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Mhsboat ctrl
+    URDF
     
   </span>
   
@@ -1330,7 +1181,7 @@
   
   
   <span class="md-ellipsis">
-    Starting
+    Website
     
   </span>
   
@@ -1340,100 +1191,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Starting
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../starting/how_to_read/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to read
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../starting/ros2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ros2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Website
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Website
           </label>
@@ -1446,12 +1203,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../website/" class="md-nav__link">
+      <a href="../../website/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Index
+    Development
     
   </span>
   
@@ -1496,73 +1253,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-section-descriptions" class="md-nav__link">
+  <a href="#what-is-ros-2" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Section Descriptions
+      What is ROS 2?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Main Section Descriptions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-ros-2-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does ROS 2 Work?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How Does ROS 2 Work?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#archive" class="md-nav__link">
+  <a href="#nodes" class="md-nav__link">
     <span class="md-ellipsis">
-      Archive
+      Nodes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
+  <a href="#topics-publishers-and-subscribers" class="md-nav__link">
     <span class="md-ellipsis">
-      Hardware
+      Topics, Publishers, and Subscribers
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#services-servers-and-clients" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      Services, Servers, and Clients
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sim" class="md-nav__link">
+  <a href="#actions" class="md-nav__link">
     <span class="md-ellipsis">
-      Sim
+      Actions
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
+  <a href="#packages" class="md-nav__link">
     <span class="md-ellipsis">
-      Software
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#starting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Starting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#website" class="md-nav__link">
-    <span class="md-ellipsis">
-      Website
+      Packages
     </span>
   </a>
   
@@ -1574,60 +1322,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Table of Contents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archive_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Archive
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute
+      Next Steps
     </span>
   </a>
   
@@ -1649,68 +1346,50 @@
 
 
 
-<p><a href="" id="home"></a></p>
-<h1 id="welcome-to-roboboat-cs-documentation">Welcome to Roboboat CS Documentation<a class="headerlink" href="#welcome-to-roboboat-cs-documentation" title="Permanent link">&para;</a></h1>
-<p>This is the home page for the documentation over Computer Science at MHSeals. Here you'll find guides, tutorials, and reference material for robotics, ROS2, hardware, simulation, and more. Use this page as a table of contents if you are looking for something specific and are unsure of where it would be located.</p>
-<h2 id="main-section-descriptions">Main Section Descriptions<a class="headerlink" href="#main-section-descriptions" title="Permanent link">&para;</a></h2>
-<h3 id="archive">Archive<a class="headerlink" href="#archive" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="sim">Sim<a class="headerlink" href="#sim" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="starting">Starting<a class="headerlink" href="#starting" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="website">Website<a class="headerlink" href="#website" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
-<h3 id="archive_1">Archive<a class="headerlink" href="#archive_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a class="autorefs autorefs-internal" href="kiss_icp/#kiss_icp">KISS-ICP</a></li>
-<li><a class="autorefs autorefs-internal" href="mavros/#mavros_1">MAVROS</a></li>
-<li><a class="autorefs autorefs-internal" href="slam_toolbox/#slam_toolbox">SLAM Toolbox</a></li>
-</ul>
-<h3 id="hardware_1">Hardware<a class="headerlink" href="#hardware_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a class="autorefs autorefs-internal" href="../hardware/cube_orange/#cube-orange_1">Cube Orange</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/jetson_xavier_nx/#nvidia-jetson-xavier-nx">Jetson Xavier NX</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/network/#roboboat-network-setup">Network</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/odroid/#odroid_1">Odroid</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/overview/#roboboat-hardware-overview">Overview</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/vlp16/#velodyne-vlp-16-lidar">Velodyne VLP-16</a></li>
-<li><a class="autorefs autorefs-internal" href="../hardware/zed_2i/#zed-2i_1">Zed2i</a></li>
-</ul>
-<h3 id="hardware_2">Hardware<a class="headerlink" href="#hardware_2" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<h3 id="hardware_3">Hardware<a class="headerlink" href="#hardware_3" title="Permanent link">&para;</a></h3>
-<p>Description....</p>
-<ul>
-<li><a class="autorefs autorefs-internal" href="../starting/ros2/#ros-2-overview">Getting Started with ROS2</a></li>
-<li><a class="autorefs autorefs-internal" href="../setup/workspace_setup/#roboboat-workspace-setup">Workspace Setup Guide</a></li>
-<li><strong>Basic Commands:</strong> [Essential ROS2 Commands][basic-commands]</li>
-<li>
-<p><strong>How to Read Docs:</strong> <a class="autorefs autorefs-internal" href="../starting/how_to_read/#how-to-read-ros-documentation">Documentation Guide</a></p>
-</li>
-<li>
-<p><a class="autorefs autorefs-internal" href="../hardware/network/#roboboat-network-setup">Network Setup</a></p>
-</li>
-<li><a class="autorefs autorefs-internal" href="../hardware/vlp16/#velodyne-vlp-16-lidar">VLP-16 Lidar</a></li>
-<li><strong>Simulation &amp; SLAM</strong></li>
-<li><a class="autorefs autorefs-internal" href="../sim/gazebo/#gazebo_1">Gazebo Simulation</a></li>
-<li><strong>Setup</strong></li>
-<li><a class="autorefs autorefs-internal" href="../setup/installing_ubuntu/#installing-ubuntu-2204">Installing Ubuntu</a></li>
-<li><a class="autorefs autorefs-internal" href="../setup/workspace_setup/#roboboat-workspace-setup">Workspace Setup</a></li>
-<li><strong>Website</strong></li>
-<li><a class="autorefs autorefs-internal" href="../website/#mhs-seals-website-documentation">Website Info</a></li>
-</ul>
-<h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">&para;</a></h2>
-<p>Help us improve! Submit a pull request on <a href="https://github.com/MHSeals/docs">GitHub</a> to add or update documentation.</p>
+<p><a href="" id="ros2"></a></p>
+<h1 id="ros-2-overview">ROS 2 Overview<a class="headerlink" href="#ros-2-overview" title="Permanent link">&para;</a></h1>
+<p>Welcome to ROS 2! ROS (Robot Operating System), is not actually an operating system, but is a powerful set of libraries and tools for building robot software. ROS 2 is the modern, improved version of ROS 1, and our team uses the <strong>Humble</strong> distribution (as of October 2024).</p>
 <hr />
-<p>For more info, visit <a href="https://docs.mhsroboboat.com">docs.mhsroboboat.com</a></p>
+<h2 id="what-is-ros-2">What is ROS 2?<a class="headerlink" href="#what-is-ros-2" title="Permanent link">&para;</a></h2>
+<p>ROS 2 helps you create modular, scalable, and robust robotics applications. It provides a flexible framework for writing robot code, connecting sensors, actuators, and algorithms.</p>
+<hr />
+<h2 id="how-does-ros-2-work">How Does ROS 2 Work?<a class="headerlink" href="#how-does-ros-2-work" title="Permanent link">&para;</a></h2>
+<p><img alt="ROS2 node graph" src="../ros2_nodegraph.gif" />
+ROS 2 applications are built from interconnected nodes that communicate with each other.</p>
+<h3 id="nodes">Nodes<a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h3>
+<p>A <strong>node</strong> is an executable program that performs a specific task. Nodes can communicate using topics, services, and actions.
+- <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html">Learn more about nodes</a></p>
+<h3 id="topics-publishers-and-subscribers">Topics, Publishers, and Subscribers<a class="headerlink" href="#topics-publishers-and-subscribers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A <strong>publisher</strong> sends messages to a topic.</li>
+<li><strong>Subscribers</strong> listen for messages on topics.</li>
+<li>You can create as many topics as you need!</li>
+<li><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html">Topics tutorial</a></li>
+</ul>
+<h3 id="services-servers-and-clients">Services, Servers, and Clients<a class="headerlink" href="#services-servers-and-clients" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A <strong>service client</strong> sends a request to a server, which returns a response.</li>
+<li><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">Services tutorial</a></li>
+</ul>
+<h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
+<p><img alt="ROS2 action breakdown" src="../ros2_nodeactions.gif" />
+Actions allow for long-running tasks with feedback. They have three parts:
+1. <strong>Goal</strong>
+2. <strong>Feedback</strong>
+3. <strong>Result</strong>
+- <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html">Actions tutorial</a></p>
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<p>A <strong>package</strong> is a collection of code, launch files, and configuration for a specific functionality. To build or update all packages, run:</p>
+<pre><code class="language-sh">colcon build
+</code></pre>
+<p>This creates <code>build</code>, <code>install</code>, and <code>log</code> folders in your workspace.</p>
+<hr />
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ready to start programming? Explore our <a href="./basic_commands.md">Basic Commands</a> and <a href="../../setup/workspace_setup/">Workspace Setup</a> guides.</li>
+<li>Want to help improve these docs? Submit a pull request on <a href="https://github.com/MHSeals/docs">GitHub</a>!</li>
+</ul>
+<hr />
 
 
 
@@ -1743,7 +1422,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../how_to_read/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How To Read">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1753,20 +1432,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                How To Read
               </div>
             </div>
           </a>
         
         
           
-          <a href="kiss_icp/" class="md-footer__link md-footer__link--next" aria-label="Next: Kiss icp">
+          <a href="../../custom_implementation/boat_interfaces/" class="md-footer__link md-footer__link--next" aria-label="Next: Boat Interfaces">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Kiss icp
+                Boat Interfaces
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1806,10 +1485,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.path", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
