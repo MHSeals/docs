@@ -40,6 +40,7 @@ theme:
 plugins:
   - search
   - autorefs
+  - mkdocs-nav-weight
 
 
 markdown_extensions:
