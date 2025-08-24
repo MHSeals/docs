@@ -1,3 +1,4 @@
+[](){ #mavros }
 # MAVROS
 ## SetMode
 - create a `mavros_msgs.srv.SetMode` client for the `/mavros/set_mode` topic

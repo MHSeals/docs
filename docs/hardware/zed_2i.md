@@ -1,3 +1,4 @@
+[](){ #zed-2i }
 # Zed 2i
 
 The Zed 2i is a new camera replacing our outdated Realsense cameras. It is designed to work outside and provides high-resolution stereo vision for depth perception and 3D mapping.

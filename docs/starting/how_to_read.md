@@ -1,3 +1,4 @@
+[](){ #how-to-read }
 # How to Read ROS Documentation
 
 Understanding ROS documentation is key to working efficiently with robotics software. Here are some tips and examples to help you get started:

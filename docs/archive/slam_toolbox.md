@@ -1,3 +1,4 @@
+[](){ #slam-toolbox }
 # slam_toolbox
 slam_toolbox is a package we use to implement the SLAM algorithm in roboboat :)
 

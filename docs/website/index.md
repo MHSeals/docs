@@ -1,3 +1,4 @@
+[](){ #website-documentation }
 # MHS Seals Website Documentation
 
 Author: Alec Jensen

@@ -1,3 +1,4 @@
+[](){ #workspace-setup }
 # Roboboat Workspace Setup
 
 Set up your ROS2 development workspace on Ubuntu for Roboboat projects.

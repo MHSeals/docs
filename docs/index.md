@@ -1,3 +1,4 @@
+[](){ #home }
 ---
 title: Roboboat CS Documentation
 ---
@@ -9,26 +10,26 @@ This site is the central hub for all things Computer Science at MHSeals. Here yo
 ## Quick Start
 
 - **New to Roboboat?**
-  - [Getting Started with ROS2](./starting/ros2.md)
-  - [Workspace Setup Guide](./setup/workspace_setup.md)
-- **Basic Commands:** [Essential ROS2 Commands](./starting/basic_commands.md)
-- **How to Read Docs:** [Documentation Guide](./starting/how2read.md)
+  - [Getting Started with ROS2][ros2]
+  - [Workspace Setup Guide][workspace-setup]
+- **Basic Commands:** [Essential ROS2 Commands][basic-commands]
+- **How to Read Docs:** [Documentation Guide][how-to-read]
 
 ## Main Sections
 
 - **Hardware**
-  - [Network Setup](./hardware/network.md)
-  - [VLP-16 Lidar](./hardware/vlp16.md)
+  - [Network Setup][network]
+  - [VLP-16 Lidar][vlp16]
 - **Simulation & SLAM**
-  - [Gazebo Simulation](./archive/sim/gazebo.md)
-  - [SLAM Toolbox](./archive/slam_toolbox.md)
-  - [KISS-ICP](./archive/kiss_icp.md)
-  - [MAVROS](./archive/mavros.md)
+  - [Gazebo Simulation][gazebo]
+  - [SLAM Toolbox][slam-toolbox]
+  - [KISS-ICP][kiss-icp]
+  - [MAVROS][mavros]
 - **Setup**
-  - [Installing Ubuntu](./setup/installing_ubuntu.md)
-  - [Workspace Setup](./setup/workspace_setup.md)
+  - [Installing Ubuntu][installing-ubuntu]
+  - [Workspace Setup][workspace-setup]
 - **Website**
-  - [Website Info](./website/index.md)
+  - [Website Info][website-documentation]
 
 ## Contribute
 

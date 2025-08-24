@@ -1,3 +1,4 @@
+[](){ #vlp16 }
 # Velodyne VLP-16 (LIDAR)
 
 The VLP-16 is a 3D LIDAR sensor used for robotics and mapping. Note: The VLP-16 will be unused for Roboboat projects from 2026 onward.

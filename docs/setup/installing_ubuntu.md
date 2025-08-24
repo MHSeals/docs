@@ -1,3 +1,4 @@
+[](){ #installing-ubuntu }
 # Installing Ubuntu 22.04
 
 This guide will help you safely install Ubuntu 22.04 on your laptop for robotics development.

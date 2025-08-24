@@ -1,3 +1,4 @@
+[](){ #network }
 # Roboboat Network Setup
 
 The Roboboat uses a dedicated onboard network for reliable communication and control.

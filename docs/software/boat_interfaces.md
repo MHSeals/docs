@@ -1,3 +1,4 @@
+[](){ #boat-interfaces }
 # Custom ROS2 Messages for MHSeals Boat (boat_interfaces)
 
 This page documents the `boat_interfaces` repository, which provides custom ROS2 message definitions essential for the MHSeals boat control system and related packages.

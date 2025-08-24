@@ -1,3 +1,4 @@
+[](){ #mhsboat-ctrl }
 # MHSeals Boat Control Software (mhsboat_ctrl)
 
 This page provides an in-depth overview of the MHSeals boat control software, its architecture, packages, and usage. The control system is designed for modularity, simulation support, and robust autonomous operation using ROS 2.

@@ -1,3 +1,4 @@
+[](){ #overview }
 # Roboboat Hardware Overview
 
 This page provides a summary of the main hardware components used in the Roboboat project. For detailed setup and usage instructions, see the linked documentation for each device.

@@ -1,3 +1,4 @@
+[](){ #kiss-icp }
 # kiss_icp
 kiss_icp is an odometry pipeline 'that just works'. :3
 

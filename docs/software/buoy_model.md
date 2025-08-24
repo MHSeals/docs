@@ -1,3 +1,4 @@
+[](){ #buoy-model }
 # Buoy Detection Model (buoy-model)
 
 This page documents the MHSeals buoy detection model repository, which is used to train and run object detection models for buoys using YOLOv8 and Roboflow datasets.

@@ -1,3 +1,4 @@
+[](){ #gazebo }
 # gazebo
 gazebo is a simulation program we use to test our boat!
 instead of taking out our boat every time we need to test code, we simply run gazebo!

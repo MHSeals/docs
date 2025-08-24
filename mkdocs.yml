@@ -37,6 +37,10 @@ theme:
     - content.code.copy
     - content.action.edit
 
+plugins:
+  - search
+  - autorefs
+
 markdown_extensions:
   - toc:
       permalink: True
