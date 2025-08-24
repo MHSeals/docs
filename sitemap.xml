@@ -5,6 +5,10 @@
          <lastmod>2025-08-24</lastmod>
     </url>
     <url>
+         <loc>https://docs.mhsroboboat.com/archive/</loc>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
          <loc>https://docs.mhsroboboat.com/archive/kiss_icp/</loc>
          <lastmod>2025-08-24</lastmod>
     </url>
@@ -17,7 +21,11 @@
          <lastmod>2025-08-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.mhsroboboat.com/hardware/cubeorange/</loc>
+         <loc>https://docs.mhsroboboat.com/archive/tf2/</loc>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.mhsroboboat.com/hardware/cube_orange/</loc>
          <lastmod>2025-08-24</lastmod>
     </url>
     <url>
@@ -77,11 +85,7 @@
          <lastmod>2025-08-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.mhsroboboat.com/starting/basic_commands/</loc>
-         <lastmod>2025-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.mhsroboboat.com/starting/how2read/</loc>
+         <loc>https://docs.mhsroboboat.com/starting/how_to_read/</loc>
          <lastmod>2025-08-24</lastmod>
     </url>
     <url>
