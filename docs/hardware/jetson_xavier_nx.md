@@ -1,3 +1,7 @@
+---
+title: Jetson Xavier NX
+---
+
 [](){ #jetson-xavier-nx }
 # NVIDIA Jetson Xavier NX
 

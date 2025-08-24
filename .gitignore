@@ -1,1 +1,8 @@
+# built site
 site/
+
+# venv
+rb_docs/
+
+# hooks
+__pycache__/

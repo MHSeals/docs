@@ -37,11 +37,23 @@ theme:
     - content.code.copy
     - content.action.edit
 
+nav:
+  - ... | getting_started/**
+  - ...
+
 plugins:
   - search
   - autorefs
-  - mkdocs-nav-weight
+  - awesome-pages
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
 
+hooks:
+  - hooks.py
 
 markdown_extensions:
   - attr_list

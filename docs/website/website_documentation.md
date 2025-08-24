@@ -1,4 +1,7 @@
-[](){ #website-documentation }
+---
+title: Development
+---
+[](){ #website-development }
 # MHS Seals Website Documentation
 
 Author: Alec Jensen

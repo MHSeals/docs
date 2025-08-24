@@ -1,3 +1,6 @@
+---
+title: mhsboat_ctrl
+---
 [](){ #mhsboat-ctrl }
 # MHSeals Boat Control Software (mhsboat_ctrl)
 

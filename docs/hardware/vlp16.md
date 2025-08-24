@@ -1,3 +1,6 @@
+---
+title: VLP16
+---
 [](){ #vlp16 }
 # Velodyne VLP-16 (LIDAR)
 
