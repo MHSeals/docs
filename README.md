@@ -11,7 +11,7 @@ Install all dependencies through `requirements.txt` (MkDocs, "Material" theme, a
 pip install -r requirements.txt
 ```
 > [!TIP]
-> If you don't have issues installing Python packages system-wide, install Conda:
+> If you have issues installing Python packages system-wide, install Conda:
 > ```bash
 > wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh # Fetch the installer
 > bash Miniconda3-latest-Linux-x86_64.sh # Run the installer
