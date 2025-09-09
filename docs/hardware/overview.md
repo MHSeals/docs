@@ -23,7 +23,7 @@ This page provides a summary of the main hardware components used in the Roboboa
 - **Cube Orange**  
     Flight controller used for IMU and motor outputs.
 
-    [Read more &rarr;](./cubeorange.md)
+    [Read more &rarr;](./cube_orange.md)
 
 - **VLP-16 LIDAR**  
     3D laser scanner for mapping and obstacle detection.  

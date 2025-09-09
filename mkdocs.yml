@@ -36,6 +36,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.action.edit
+  logo: assets/seal.png
 
 nav:
   - ... | getting_started/**
@@ -52,11 +53,15 @@ plugins:
       reverse: false
       headless_included: false
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - toc:
+      permalink: true
+
 hooks:
   - hooks.py
 
-markdown_extensions:
-  - attr_list
-  - toc:
-      permalink: True
 copyright: Copyright &copy; 2025 MHS Seals
