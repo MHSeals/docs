@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -90,8 +90,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/seal.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -332,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../website/" class="md-tabs__link">
+        <a href="../../website/website_documentation/" class="md-tabs__link">
           
   
   
@@ -368,8 +367,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/seal.png" alt="logo">
 
     </a>
     MHSeals Docs
@@ -453,6 +451,29 @@
   
   <span class="md-ellipsis">
     How To Read
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
     
   </span>
   
@@ -1161,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../website/" class="md-nav__link">
+      <a href="../../website/website_documentation/" class="md-nav__link">
         
   
   
@@ -1286,20 +1307,18 @@
 - <strong>row_step</strong>: Number of bytes per row (<code>uint32</code>)
   - Calculated as (# of points in a row × point_step)
 - <strong>fields[]</strong>: Array describing each attribute in a point (see <a href="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/PointField.html">PointField</a>)</p>
-<p>Example:</p>
-<pre><code class="language-python">mypointcloud.fields = [
-    PointField('x', 0, PointField.FLOAT32, 1),
-    PointField('y', 4, PointField.FLOAT32, 1),
-    PointField('z', 8, PointField.FLOAT32, 1),
-    PointField('intensity', 12, PointField.FLOAT32, 1)
-]
-</code></pre>
-<ul>
-<li><strong>attribute</strong>: Name (e.g., x, y, z, intensity)</li>
-<li><strong>offset</strong>: Start index in the point structure</li>
-<li><strong>datatype</strong>: Data type (e.g., FLOAT32)</li>
-<li><strong>count</strong>: Number of elements</li>
-</ul>
+<p>Example:
+<div class="highlight"><pre><span></span><code><span class="n">mypointcloud</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;intensity&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre></div>
+- <strong>attribute</strong>: Name (e.g., x, y, z, intensity)
+- <strong>offset</strong>: Start index in the point structure
+- <strong>datatype</strong>: Data type (e.g., FLOAT32)
+- <strong>count</strong>: Number of elements</p>
 <hr />
 <h2 id="troubleshooting-tips">Troubleshooting &amp; Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link">&para;</a></h2>
 <ul>

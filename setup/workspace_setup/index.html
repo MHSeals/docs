@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -90,8 +90,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="MHSeals Docs" class="md-header__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/seal.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -332,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../website/" class="md-tabs__link">
+        <a href="../../website/website_documentation/" class="md-tabs__link">
           
   
   
@@ -368,8 +367,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="MHSeals Docs" class="md-nav__button md-logo" aria-label="MHSeals Docs" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/seal.png" alt="logo">
 
     </a>
     MHSeals Docs
@@ -453,6 +451,29 @@
   
   <span class="md-ellipsis">
     How To Read
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
     
   </span>
   
@@ -1212,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../website/" class="md-nav__link">
+      <a href="../../website/website_documentation/" class="md-nav__link">
         
   
   
@@ -1379,39 +1400,39 @@
 <h3 id="1-install-ros2">1. Install ROS2<a class="headerlink" href="#1-install-ros2" title="Permanent link">&para;</a></h3>
 <p>Follow the official instructions for <a href="https://docs.ros.org/en/humble/Installation.html">ROS2 Humble</a>.</p>
 <h3 id="2-create-your-workspace">2. Create Your Workspace<a class="headerlink" href="#2-create-your-workspace" title="Permanent link">&para;</a></h3>
-<p>Open a terminal and run:</p>
-<pre><code class="language-bash">mkdir -p ~/roboboat_ws/src
-cd ~/roboboat_ws
-</code></pre>
+<p>Open a terminal and run:
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/roboboat_ws/src
+<span class="nb">cd</span><span class="w"> </span>~/roboboat_ws
+</code></pre></div></p>
 <h3 id="3-clone-required-packages">3. Clone Required Packages<a class="headerlink" href="#3-clone-required-packages" title="Permanent link">&para;</a></h3>
-<p>Inside the <code>src</code> folder, clone the main control package and interfaces:</p>
-<pre><code class="language-bash">cd src
-git clone https://github.com/MHSeals/mhsboat_ctrl
-git clone https://github.com/MHSeals/boat_interfaces
-</code></pre>
+<p>Inside the <code>src</code> folder, clone the main control package and interfaces:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MHSeals/mhsboat_ctrl
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MHSeals/boat_interfaces
+</code></pre></div></p>
 <h3 id="4-build-the-workspace">4. Build the Workspace<a class="headerlink" href="#4-build-the-workspace" title="Permanent link">&para;</a></h3>
-<p>Return to the workspace root and build:</p>
-<pre><code class="language-bash">cd ~/roboboat_ws
-colcon build --symlink-install
-</code></pre>
+<p>Return to the workspace root and build:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/roboboat_ws
+colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
+</code></pre></div></p>
 <h3 id="5-source-the-workspace">5. Source the Workspace<a class="headerlink" href="#5-source-the-workspace" title="Permanent link">&para;</a></h3>
-<p>After building, run:</p>
-<pre><code class="language-bash">source install/setup.bash
-</code></pre>
-<p>Edit your <code>.bashrc</code> and add the following line to source automatically:</p>
-<pre><code class="language-bash">source ~/roboboat_ws/install/setup.bash
-</code></pre>
+<p>After building, run:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div></p>
+<p>Edit your <code>.bashrc</code> and add the following line to source automatically:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/roboboat_ws/install/setup.bash
+</code></pre></div></p>
 <hr />
 <h2 id="workspace-structure-example">Workspace Structure Example<a class="headerlink" href="#workspace-structure-example" title="Permanent link">&para;</a></h2>
-<p>Your workspace should look like this:</p>
-<pre><code class="language-text">roboboat_ws/
+<p>Your workspace should look like this:
+<div class="highlight"><pre><span></span><code>roboboat_ws/
 ├── build/
 ├── install/
 ├── log/
 └── src/
     ├── mhsboat_ctrl/
     └── boat_interfaces/
-</code></pre>
+</code></pre></div></p>
 <hr />
 <h2 id="tips-troubleshooting">Tips &amp; Troubleshooting<a class="headerlink" href="#tips-troubleshooting" title="Permanent link">&para;</a></h2>
 <ul>
