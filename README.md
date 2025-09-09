@@ -28,12 +28,12 @@ pip install -r requirements.txt
 > ```
 
 Finally, launch the live server that will update automatically as you make/save changes:
-````bash
+```bash
 mkdocs serve
 ```
 
 Once you're done editing, build the website and push it onto the gh-pages branch.
-````bash
+```bash
 mkdocs build
 mkdocs gh-deploy
 ```
