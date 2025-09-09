@@ -3,7 +3,7 @@ This repository hosts all the documentation regarding computer science.
 
 ## How to contribute
 First, clone the repository:
-````bash
+```bash
 git clone https://github.com/MHSeals/docs.git
 ```
 Install all dependencies through `requirements.txt` (MkDocs, "Material" theme, and plugins):
