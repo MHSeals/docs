@@ -2,94 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.mhsroboboat.com/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/archive/kiss_icp/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/archive/mavros/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/archive/slam_toolbox/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/custom_implementation/boat_interfaces/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/custom_implementation/buoy_model/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/custom_implementation/mhsboat_ctrl/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.mhsroboboat.com/getting_started/basic_terminology/</loc>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/getting_started/how_to_read/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/getting_started/python/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/getting_started/ros2/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/cube_orange/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/jetson_xavier_nx/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/network/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/odroid/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/overview/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/vlp16/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/hardware/zed_2i/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/setup/installing_ubuntu/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/setup/workspace_setup/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/simulation/gazebo/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/simulation/tf2/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/simulation/urdf/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
          <loc>https://docs.mhsroboboat.com/website/website_documentation/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-18</lastmod>
     </url>
 </urlset>
