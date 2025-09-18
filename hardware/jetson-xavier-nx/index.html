@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.mhsroboboat.com/hardware/vlp16/">
+        <link rel="canonical" href="https://docs.mhsroboboat.com/hardware/jetson-xavier-nx/">
       
       
-        <link rel="prev" href="../odroid/">
+        <link rel="prev" href="../cube-orange/">
       
       
-        <link rel="next" href="../zed-2i/">
+        <link rel="next" href="../network/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>VLP16 - MHSeals Docs</title>
+        <title>Jetson Xavier NX - MHSeals Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#velodyne-vlp-16-lidar" class="md-skip">
+        <a href="#nvidia-jetson-xavier-nx" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VLP16
+              Jetson Xavier NX
             
           </span>
         </div>
@@ -750,10 +750,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../jetson-xavier-nx/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -764,6 +773,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -819,32 +829,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    VLP16
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../vlp16/" class="md-nav__link">
         
   
   
@@ -855,62 +843,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ros-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS Integration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pointcloud2-message-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      PointCloud2 Message Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting &amp; Tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1248,50 +1180,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ros-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS Integration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pointcloud2-message-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      PointCloud2 Message Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting &amp; Tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1306,53 +1194,9 @@
 
 
 
-<p><a href="" id="vlp16"></a></p>
-<h1 id="velodyne-vlp-16-lidar">Velodyne VLP-16 (LIDAR)<a class="headerlink" href="#velodyne-vlp-16-lidar" title="Permanent link">&para;</a></h1>
-<p>The VLP-16 is a 3D LIDAR sensor used for robotics and mapping. Note: The VLP-16 will be unused for Roboboat projects from 2026 onward.</p>
-<hr />
-<h2 id="hardware-setup">Hardware Setup<a class="headerlink" href="#hardware-setup" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Power the LIDAR</strong> using the included adapter.</li>
-<li><strong>Connect the LIDAR to your computer via Ethernet.</strong></li>
-<li>Make sure your computer's Ethernet port is configured to communicate with the sensor (check your network settings).</li>
-</ol>
-<hr />
-<h2 id="ros-integration">ROS Integration<a class="headerlink" href="#ros-integration" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Install the official <a href="http://wiki.ros.org/velodyne">velodyne ROS driver</a> or use community packages like <a href="https://github.com/Ikhyeon-Cho/velodyne_ros_tools"><code>velodyne_ros_tools</code></a>.</li>
-<li>The VLP-16 publishes <code>sensor_msgs/msg/PointCloud2</code> messages, typically to <code>/wamv/sensors/lidars/lidar_wamv_sensor/points</code> or <code>/velodyne_points</code>.</li>
-<li>To view data, use RViz and add a PointCloud2 display.</li>
-</ul>
-<hr />
-<h2 id="pointcloud2-message-structure">PointCloud2 Message Structure<a class="headerlink" href="#pointcloud2-message-structure" title="Permanent link">&para;</a></h2>
-<p>Relevant fields:
-- <strong>point_step</strong>: Number of bytes per point (<code>uint32</code>)
-- <strong>row_step</strong>: Number of bytes per row (<code>uint32</code>)
-  - Calculated as (# of points in a row × point_step)
-- <strong>fields[]</strong>: Array describing each attribute in a point (see <a href="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/PointField.html">PointField</a>)</p>
-<p>Example:
-<div class="highlight"><pre><span></span><code><span class="n">mypointcloud</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;intensity&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="p">]</span>
-</code></pre></div>
-- <strong>attribute</strong>: Name (e.g., x, y, z, intensity)
-- <strong>offset</strong>: Start index in the point structure
-- <strong>datatype</strong>: Data type (e.g., FLOAT32)
-- <strong>count</strong>: Number of elements</p>
-<hr />
-<h2 id="troubleshooting-tips">Troubleshooting &amp; Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link">&para;</a></h2>
-<ul>
-<li>If you don't see data in RViz, check your Ethernet connection and ensure the driver is running.<ul>
-<li>Make sure the IP and port configuration in the Velodyne's configuration web interface are correct.</li>
-</ul>
-</li>
-<li>For ROS2 Humble, you may need to convert or adapt drivers/packages.</li>
-<li>Refer to the <a href="https://docs.clearpathrobotics.com/assets/files/clearpath_robotics_029029-TDS2-00b7913d65b51a841cb5dc6c2b711487.pdf">VLP-16 User Manual</a> for hardware details.</li>
-</ul>
-<hr />
+<p><a href="" id="jetson-xavier-nx"></a></p>
+<h1 id="nvidia-jetson-xavier-nx">NVIDIA Jetson Xavier NX<a class="headerlink" href="#nvidia-jetson-xavier-nx" title="Permanent link">&para;</a></h1>
+<p>The Jetson Xavier NX is used to run the heavy tasks like machine learning.</p>
 
 
 
@@ -1385,7 +1229,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../odroid/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Odroid">
+          <a href="../cube-orange/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cube Orange">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1395,20 +1239,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Odroid
+                Cube Orange
               </div>
             </div>
           </a>
         
         
           
-          <a href="../zed-2i/" class="md-footer__link md-footer__link--next" aria-label="Next: Zed 2I">
+          <a href="../network/" class="md-footer__link md-footer__link--next" aria-label="Next: Network">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Zed 2I
+                Network
               </div>
             </div>
             <div class="md-footer__button md-icon">

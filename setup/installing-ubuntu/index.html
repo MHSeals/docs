@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.mhsroboboat.com/hardware/vlp16/">
+        <link rel="canonical" href="https://docs.mhsroboboat.com/setup/installing-ubuntu/">
       
       
-        <link rel="prev" href="../odroid/">
+        <link rel="prev" href="../../hardware/zed-2i/">
       
       
-        <link rel="next" href="../zed-2i/">
+        <link rel="next" href="../workspace-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>VLP16 - MHSeals Docs</title>
+        <title>Installing Ubuntu - MHSeals Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#velodyne-vlp-16-lidar" class="md-skip">
+        <a href="#installing-ubuntu-2204" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VLP16
+              Installing Ubuntu
             
           </span>
         </div>
@@ -265,13 +265,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hardware/overview/" class="md-tabs__link">
           
   
   
@@ -287,11 +285,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../setup/installing-ubuntu/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -658,29 +658,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -693,7 +688,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Hardware
@@ -707,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../hardware/overview/" class="md-nav__link">
         
   
   
@@ -730,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cube-orange/" class="md-nav__link">
+      <a href="../../hardware/cube-orange/" class="md-nav__link">
         
   
   
@@ -753,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson-xavier-nx/" class="md-nav__link">
+      <a href="../../hardware/jetson-xavier-nx/" class="md-nav__link">
         
   
   
@@ -776,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/" class="md-nav__link">
+      <a href="../../hardware/network/" class="md-nav__link">
         
   
   
@@ -799,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../odroid/" class="md-nav__link">
+      <a href="../../hardware/odroid/" class="md-nav__link">
         
   
   
@@ -819,32 +814,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    VLP16
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hardware/vlp16/" class="md-nav__link">
         
   
   
@@ -855,62 +828,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ros-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS Integration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pointcloud2-message-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      PointCloud2 Message Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting &amp; Tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -923,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zed-2i/" class="md-nav__link">
+      <a href="../../hardware/zed-2i/" class="md-nav__link">
         
   
   
@@ -950,24 +867,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -980,7 +902,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -991,10 +913,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../setup/installing-ubuntu/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installing Ubuntu
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1005,6 +949,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partitioning-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partitioning Tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting &amp; Safety
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1017,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup/workspace-setup/" class="md-nav__link">
+      <a href="../workspace-setup/" class="md-nav__link">
         
   
   
@@ -1255,36 +1255,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hardware-setup" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Hardware Setup
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-integration" class="md-nav__link">
+  <a href="#installation-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      ROS Integration
+      Installation Steps
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pointcloud2-message-structure" class="md-nav__link">
+  <a href="#partitioning-tips" class="md-nav__link">
     <span class="md-ellipsis">
-      PointCloud2 Message Structure
+      Partitioning Tips
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
+  <a href="#troubleshooting-safety" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshooting &amp; Tips
+      Troubleshooting &amp; Safety
     </span>
   </a>
   
@@ -1306,51 +1306,72 @@
 
 
 
-<p><a href="" id="vlp16"></a></p>
-<h1 id="velodyne-vlp-16-lidar">Velodyne VLP-16 (LIDAR)<a class="headerlink" href="#velodyne-vlp-16-lidar" title="Permanent link">&para;</a></h1>
-<p>The VLP-16 is a 3D LIDAR sensor used for robotics and mapping. Note: The VLP-16 will be unused for Roboboat projects from 2026 onward.</p>
+<p><a href="" id="installing-ubuntu"></a></p>
+<h1 id="installing-ubuntu-2204">Installing Ubuntu 22.04<a class="headerlink" href="#installing-ubuntu-2204" title="Permanent link">&para;</a></h1>
+<p>This guide will help you safely install Ubuntu 22.04 on your laptop for robotics development.</p>
 <hr />
-<h2 id="hardware-setup">Hardware Setup<a class="headerlink" href="#hardware-setup" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Power the LIDAR</strong> using the included adapter.</li>
-<li><strong>Connect the LIDAR to your computer via Ethernet.</strong></li>
-<li>Make sure your computer's Ethernet port is configured to communicate with the sensor (check your network settings).</li>
-</ol>
-<hr />
-<h2 id="ros-integration">ROS Integration<a class="headerlink" href="#ros-integration" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>You will need:</p>
 <ul>
-<li>Install the official <a href="http://wiki.ros.org/velodyne">velodyne ROS driver</a> or use community packages like <a href="https://github.com/Ikhyeon-Cho/velodyne_ros_tools"><code>velodyne_ros_tools</code></a>.</li>
-<li>The VLP-16 publishes <code>sensor_msgs/msg/PointCloud2</code> messages, typically to <code>/wamv/sensors/lidars/lidar_wamv_sensor/points</code> or <code>/velodyne_points</code>.</li>
-<li>To view data, use RViz and add a PointCloud2 display.</li>
-</ul>
-<hr />
-<h2 id="pointcloud2-message-structure">PointCloud2 Message Structure<a class="headerlink" href="#pointcloud2-message-structure" title="Permanent link">&para;</a></h2>
-<p>Relevant fields:
-- <strong>point_step</strong>: Number of bytes per point (<code>uint32</code>)
-- <strong>row_step</strong>: Number of bytes per row (<code>uint32</code>)
-  - Calculated as (# of points in a row × point_step)
-- <strong>fields[]</strong>: Array describing each attribute in a point (see <a href="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/PointField.html">PointField</a>)</p>
-<p>Example:
-<div class="highlight"><pre><span></span><code><span class="n">mypointcloud</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">PointField</span><span class="p">(</span><span class="s1">&#39;intensity&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="n">PointField</span><span class="o">.</span><span class="n">FLOAT32</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="p">]</span>
-</code></pre></div>
-- <strong>attribute</strong>: Name (e.g., x, y, z, intensity)
-- <strong>offset</strong>: Start index in the point structure
-- <strong>datatype</strong>: Data type (e.g., FLOAT32)
-- <strong>count</strong>: Number of elements</p>
-<hr />
-<h2 id="troubleshooting-tips">Troubleshooting &amp; Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link">&para;</a></h2>
-<ul>
-<li>If you don't see data in RViz, check your Ethernet connection and ensure the driver is running.<ul>
-<li>Make sure the IP and port configuration in the Velodyne's configuration web interface are correct.</li>
+<li><strong>USB drive</strong> (at least 8GB)<ul>
+<li>If you don't have a USB, ask Alec, Ryan, or Tuyet.</li>
 </ul>
 </li>
-<li>For ROS2 Humble, you may need to convert or adapt drivers/packages.</li>
-<li>Refer to the <a href="https://docs.clearpathrobotics.com/assets/files/clearpath_robotics_029029-TDS2-00b7913d65b51a841cb5dc6c2b711487.pdf">VLP-16 User Manual</a> for hardware details.</li>
+<li><strong>Laptop</strong> with:<ul>
+<li>At least 16GB RAM</li>
+<li>A USB port</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="installation-steps">Installation Steps<a class="headerlink" href="#installation-steps" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Prepare the USB Drive</strong><ul>
+<li>Download <a href="https://www.ventoy.net/en/download.html">Ventoy</a> and install it on your USB drive.<ul>
+<li>Linux: Extract the <code>.tar.gz</code> and run <code>tar -xvf &lt;filename&gt;.tar.gz</code>.</li>
+<li>Windows: Extract the <code>.zip</code> file and run the installer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Download Ubuntu</strong><ul>
+<li>Get the desktop ISO for <a href="https://releases.ubuntu.com/jammy/">Ubuntu 22.04</a>.</li>
+</ul>
+</li>
+<li><strong>Copy the ISO</strong><ul>
+<li>Move the downloaded <code>.iso</code> file to your Ventoy USB drive.</li>
+</ul>
+</li>
+<li><strong>BIOS Setup</strong><ul>
+<li>Restart your laptop and enter BIOS (try F10, F11, or F12 during boot).</li>
+<li><strong>Disable Secure Boot</strong> (usually in the Boot or Security menu).</li>
+</ul>
+</li>
+<li><strong>Boot from USB</strong><ul>
+<li>Select your USB drive as the boot device.</li>
+<li>In Ventoy, choose the Ubuntu ISO to start installation.</li>
+</ul>
+</li>
+<li><strong>Install Ubuntu</strong><ul>
+<li>Follow the on-screen instructions. <strong>Do not turn off your laptop during installation!</strong></li>
+</ul>
+</li>
+<li><strong>Post-Install</strong><ul>
+<li>After installation, reboot and re-enable Secure Boot in BIOS if needed.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="partitioning-tips">Partitioning Tips<a class="headerlink" href="#partitioning-tips" title="Permanent link">&para;</a></h2>
+<ul>
+<li>If you want to completely replace Windows, select "Erase disk and install Ubuntu" during setup. Ubuntu will handle partitioning automatically.</li>
+<li>For dual-boot setups, choose "Install Ubuntu alongside Windows" and follow the prompts.</li>
+</ul>
+<hr />
+<h2 id="troubleshooting-safety">Troubleshooting &amp; Safety<a class="headerlink" href="#troubleshooting-safety" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Backup your data</strong> before starting! Installing Ubuntu will erase your hard drive if you choose the wipe option.</li>
+<li>If you get stuck, check the <a href="https://ubuntu.com/tutorials/install-ubuntu-desktop">official Ubuntu installation guide</a> or ask a team member for help.</li>
 </ul>
 <hr />
 
@@ -1359,9 +1380,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -1385,7 +1403,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../odroid/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Odroid">
+          <a href="../../hardware/zed-2i/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Zed 2I">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1395,20 +1413,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Odroid
+                Zed 2I
               </div>
             </div>
           </a>
         
         
           
-          <a href="../zed-2i/" class="md-footer__link md-footer__link--next" aria-label="Next: Zed 2I">
+          <a href="../workspace-setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Workspace Setup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Zed 2I
+                Workspace Setup
               </div>
             </div>
             <div class="md-footer__button md-icon">
