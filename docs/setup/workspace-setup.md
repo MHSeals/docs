@@ -7,7 +7,7 @@ Set up your ROS2 development workspace on Ubuntu for Roboboat projects.
 
 ## Prerequisites
 
-- **Ubuntu 22.04** ([installation guide](installing_ubuntu.md))  
+- **Ubuntu 22.04** ([installation guide][installing-ubuntu])  
   *Do not use WSL! It will not work!*
 - **8GB RAM** (minimum)
 

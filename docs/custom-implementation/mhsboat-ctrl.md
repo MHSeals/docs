@@ -1,5 +1,5 @@
 ---
-title: mhsboat_ctrl
+title: Boat Control Package (mhsboat_ctrl)
 ---
 [](){ #mhsboat-ctrl }
 # MHSeals Boat Control Software (mhsboat_ctrl)

@@ -54,7 +54,7 @@ This creates `build`, `install`, and `log` folders in your workspace.
 
 ## Next Steps
 
-- Ready to start programming? Explore our [Basic Commands][basic-commands] and [Workspace Setup](../setup/workspace_setup.md) guides.
+- Ready to start programming? Explore our [Basic Commands][basic-commands] and [Workspace Setup][workspace-setup] guides.
 - Want to help improve these docs? Submit a pull request on [GitHub](https://github.com/MHSeals/docs)!
 
 ---

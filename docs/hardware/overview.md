@@ -13,27 +13,27 @@ This page provides a summary of the main hardware components used in the Roboboa
 - **NVIDIA Jetson Xavier NX**  
     High-performance onboard computer for AI, vision, and ROS2 nodes.
     
-    [Read more &rarr;](./jetson_xavier_nx.md)
+    [Read more &rarr;][jetson-xavier]
 
 - **Odroid**  
     Secondary processing unit for additional ROS2 nodes that do not require high GPU performance.
 
-    [Read more &rarr;](./odroid.md)
+    [Read more &rarr;][odroid]
 
 - **Cube Orange**  
     Flight controller used for IMU and motor outputs.
 
-    [Read more &rarr;](./cube_orange.md)
+    [Read more &rarr;][cube-orange]
 
 - **VLP-16 LIDAR**  
     3D laser scanner for mapping and obstacle detection.  
 
-    [Read more &rarr;](./vlp16.md)
+    [Read more &rarr;][vlp16]
 
 - **Onboard Network**  
     Managed by a router, with Ubiquiti Bullet (boat WiFi) and Rocket (shore WiFi).  
 
-    [Read more &rarr;](./network.md)
+    [Read more &rarr;][network]
 
 ---
 

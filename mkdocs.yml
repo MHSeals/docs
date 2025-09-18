@@ -39,7 +39,7 @@ theme:
   logo: assets/seal.png
 
 nav:
-  - ... | getting_started/**
+  - ... | getting-started/**
   - ...
 
 plugins:
